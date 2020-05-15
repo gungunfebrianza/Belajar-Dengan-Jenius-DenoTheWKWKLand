@@ -63,6 +63,36 @@ enum Love {Maudy, Ayunda, Faza};
 var c: Love = Love.Maudy;
 ```
 
+Dengan enum kita bisa membuat naming yang mudah difahami untuk sebuah angka, index pada enum juga dimulai dari angka 0 dan seterusnya. Di bawah ini adalah contoh kode enum :
+
+```typescript
+enum Arah { kiri, atas, kanan, bawah }
+```
+
+Pada enum di atas, kiri memiliki index 0, atas memiliki index 1, kanan memiliki index 2 dan bawah memiliki index 3. Kita juga bisa mengubah index dari angka awal dalam sebuah enum.
+
+```typescript
+enum Arah { kiri = 1, atas, kanan, bawah }
+```
+
+Selain itu kita juga bisa menjelaskan seluruh index dalam enum secara explicit :
+
+```typescript
+enum Arah { kiri = 1, atas = 2, kanan = 3, bawah = 4}
+```
+
+Untuk mengakses nilai yang ada di dalam sebuah enum kita bisa memanggilnya dengan cara :
+
+```typescript
+let nilai: number = Arah.kiri;
+```
+
+Atau menggunakan posisi index yang dimilikinya
+
+```typescript
+let nilai: number = Arah[1];
+```
+
 #### *Function Return Void*
 
 Contoh sebuah ***function*** dengan ***return void***.
@@ -72,6 +102,19 @@ function beauty(): void {
 	alert("Maudy is beautiful");
 }
 ```
+
+Sebuah ***type void*** digunakan sebagai ***return type*** dari sebuah ***function***. Dengan ***void*** sebuah ***function*** tetap
+menghasilkan ***return*** yang tidak memiliki nilai.
+
+#### *Tuples*
+
+Di bawah ini terdapat sebuah ***tuple*** yang memiliki variabel ***string*** dan ***boolean***.
+
+```typescript
+let contohTuple: [string, boolean] = ["Gun Gun Febrianza", true];
+```
+
+Sebuah ***type string*** berada pada ***index*** ke 0 dan ***boolean*** ada pada ***index*** ke 1. Sebuah ***tuples*** bekerja seperti ***array*** hanya saja bisa memiliki ***type*** yang berbeda. 
 
 #### *Lambda*
 
@@ -186,3 +229,26 @@ class koordinat3D extends Math {
 #### *Modules*
 
 Contoh sebuah ***Modules***.
+
+```typescript
+module Geometry {
+	export class Kubus {
+		constructor(public lebarsisi: number = 0) {
+		}
+        
+        area() {
+            return Math.pow(this.lebarsisi, 2);
+        }
+	}
+}
+
+var s1 = new Geometry.Square(5);
+```
+
+Contoh penggunaan ***alias*** untuk menggunakan sebuah ***modules***.
+
+```typescript
+import G = Geometry;
+var s2 = new G.Square(10);
+```
+
