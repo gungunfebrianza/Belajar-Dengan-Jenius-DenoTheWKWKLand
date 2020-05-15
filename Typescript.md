@@ -6,6 +6,11 @@
 
 Jika anda melihat gambar di atas pasti faham, setiap ***Javascript Code*** adalah sebuah ***Typescript***. ***Typerscript*** memberikan kelebihan baru untuk ***javascript*** sehingga seringkali disebut dengan ***Extended*** ***Javascript***. 
 
+> What if we could strengthen JavaScript with the things that are missing for large scale
+> application development, like static typing, classes [and] modules... that’s what TypeScript
+> is about.
+> —Anders Hejlsberg
+
 Kelebihan ini dapat digunakan untuk mempermudah pengembangan setiap ***large-scale application*** yang ditulis menggunakan bahasa pemrograman ***Javascript***. Di dalam ***typescript*** kita akan mempelajari konsep seperti :
 
 1. ***Classes***, 
