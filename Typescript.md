@@ -38,6 +38,29 @@ hmm = "maybe a string instead";
 hmm = false;
 ```
 
+Terkadang kita membutuhkan sifat ***dynamic typing*** bukan hanya ***static typing*** seperti yang telah kita lakukan
+setiap kali hendak membuat sebuah variabel. Dalam ***typescript*** kita bisa menggunakan ***any-type***.
+
+```typescript
+let diaCantik: any = true; // inisialisasi dengan boolean
+console.log(typeof diaCantik);
+
+diaCantik = "benar"; // nilai variabel diubah menjadi string
+console.log(typeof diaCantik);
+
+diaCantik.fungsiX();
+```
+
+Pada kode di atas ***typeof*** adalah ***keyword*** yang digunakan untuk mengetahui tipe data suatu variabel. ***Any- Type*** yang digunakan akan membuat kompiler untuk tidak memberikan ***semantic error*** saat memeriksa ***type*** yang hendak digunakan. 
+
+***Any-type*** dapat digunakan sebagai contoh saat kita menghadapi kasus dimana kita membutuhkan ***function-parameter*** dengan karakteristik ***argument*** yang bersifat implisit atau tidak diketahui. Di bawah ini adalah contoh ***function*** dengan parameter implisit. Dikatakan implisit karena kita tidak akan pernah tau apa saja nilai yang akan dimasukan kedalam ***parameter***, karena ***parameter*** tidak memiliki ***type*** :
+
+```typescript
+function tulisNama(teman:any) {
+	console.log(teman.namaKepanjangan);
+}
+```
+
 #### *Typed Array*
 
 Contoh sebuah ***collection***, di dalam ***typescript*** terdapat terdapat ***typed*** ***Array***.
@@ -63,31 +86,31 @@ enum Love {Maudy, Ayunda, Faza};
 var c: Love = Love.Maudy;
 ```
 
-Dengan enum kita bisa membuat naming yang mudah difahami untuk sebuah angka, index pada enum juga dimulai dari angka 0 dan seterusnya. Di bawah ini adalah contoh kode enum :
+Dengan ***enum*** kita bisa membuat ***naming*** yang mudah difahami untuk sebuah angka, ***index*** pada enum juga dimulai dari angka 0 dan seterusnya. Di bawah ini adalah contoh kode ***enum*** :
 
 ```typescript
 enum Arah { kiri, atas, kanan, bawah }
 ```
 
-Pada enum di atas, kiri memiliki index 0, atas memiliki index 1, kanan memiliki index 2 dan bawah memiliki index 3. Kita juga bisa mengubah index dari angka awal dalam sebuah enum.
+Pada ***enum*** di atas, kiri memiliki ***index*** 0, atas memiliki ***index*** 1, kanan memiliki ***index*** 2 dan bawah memiliki ***index*** 3. Kita juga bisa mengubah ***index*** dari angka awal dalam sebuah ***enum***.
 
 ```typescript
 enum Arah { kiri = 1, atas, kanan, bawah }
 ```
 
-Selain itu kita juga bisa menjelaskan seluruh index dalam enum secara explicit :
+Selain itu kita juga bisa menjelaskan seluruh ***index*** dalam ***enum*** secara ***explicit*** :
 
 ```typescript
 enum Arah { kiri = 1, atas = 2, kanan = 3, bawah = 4}
 ```
 
-Untuk mengakses nilai yang ada di dalam sebuah enum kita bisa memanggilnya dengan cara :
+Untuk mengakses nilai yang ada di dalam sebuah ***enum*** kita bisa memanggilnya dengan cara :
 
 ```typescript
 let nilai: number = Arah.kiri;
 ```
 
-Atau menggunakan posisi index yang dimilikinya
+Atau menggunakan posisi ***index*** yang dimilikinya
 
 ```typescript
 let nilai: number = Arah[1];
