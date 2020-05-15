@@ -21,6 +21,10 @@
         1. [Deno Sub Command](#2-deno-sub-command)
         1. [Deno Command Structure](#3-deno-command-structure)
 - [Typescript](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md)
+    - [Typescript Quick Introduction](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#typescript-cheatsheet)
+        1. [Data Types](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
+        1. [Type Inference](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
+        1. [Typed Array](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
 
