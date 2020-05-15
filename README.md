@@ -21,6 +21,7 @@
         1. [Deno Options](#1-deno-options)
         1. [Deno Sub Command](#2-deno-sub-command)
         1. [Deno Command Structure](#3-deno-command-structure)
+        1. [Run Javascript & Typescript Files]()
 - [Typescript](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md)
     - [Typescript Quick Introduction](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#typescript-cheatsheet)
         1. [Data Types](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
@@ -42,6 +43,11 @@
 - [Contributor](#contributor)
 
 ## Lets Destroy Node.js developer.
+
+> "*When you are designing a program there are things that might be cute to add in, you always regret those*."
+>
+> Ryan Dahl - 10 Things i Regret About Node.js @ [JSConf Europe](https://www.youtube.com/watch?v=M3BM9TB-8yA)
+
 
 
 ## Installation
@@ -136,9 +142,10 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
     - copy bagian yang seperti berikut lalu pastekan pada line terakhir `.bashrc` atau `.zshrc`
       
         ```
-        export DENO_INSTALL="$HOME/.deno"
+        export DENO_INSTALL="/home/<username>/.deno"
         export PATH="$DENO_INSTALL/bin:$PATH"
         ```
+      ganti bagian `<username>` dengan username kalian
       
     - Save, lalu restart terminal dan jalankan `deno -V`
     
@@ -260,6 +267,45 @@ Terdapat struktur yang bisa kita pelajari :
 Kita dapat melihat gambaran besar lebih jauh dari ***Deno Options*** dan ***Sub-commands*** dengan gambar di bawah ini :
 
 <img src="Assets/DenoCommand.png">
+
+### Run Javascript & Typescript Files
+
+Buatlah dua buah ***file*** dengan nama ***Example.js*** dan ***Example.ts*** dan tulis kode di bawah ini :
+
+```typescript
+import { serve } from "https://deno.land/std@0.50.0/http/server.ts";
+for await (const req of serve({ port: 8000 })) {
+  req.respond({ body: "Hello World\n" });
+}
+```
+
+Kemudian eksekusi perintah di bawah ini :
+
+```
+deno run Example.js
+```
+
+Anda akan mendapatkan error sebagai berikut :
+
+```
+error: Uncaught PermissionDenied: network access to "0.0.0.0:8000", run again with the --allow-net flag
+```
+
+Ini bukti bahwa ***deno*** memiliki mekanisme keamanan yang baik dengan menerapkan konsep ***Access Control*** yang baik, agar kita dapat menggunakannya tambahkan **--allow-net flag** setelah ***sub command*** :
+
+```
+deno run --allow-net Example.js
+```
+
+Buka browser anda dan kunjungi 127.0.0.1:8000
+
+Untuk mengeksekusi ***typescript file*** :
+
+```
+deno run --allow-net Example.ts
+```
+
+
 
 ## Other Examples :
 
