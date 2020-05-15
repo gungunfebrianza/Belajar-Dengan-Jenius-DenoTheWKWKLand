@@ -1,5 +1,5 @@
 # Mastering-DenoTheWKWKLand
-Lets Destroy Node.js developer.
+## Lets Destroy Node.js developer.
 
 <img src="Cover.png" width=66%>
 
@@ -9,7 +9,7 @@ Lets Destroy Node.js developer.
 
 Kita akan melakukan instalasi ***Deno*** menggunakan ***Package Manager*** yang disebut dengan ***Chocolatey*** :
 
-#### 1. Install Chocolatey Package Manager
+#### 1. *Install Chocolatey Package Manager*
 
 Jalankan **Powershell** (**run as administrator**), kemudian eksekusi perintah di bawah ini :
 
@@ -69,7 +69,7 @@ deno -V
 
 Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
-<img src="assets/Deno.JPG">
+<img src="Assets/Deno.JPG">
 
 ### Install Deno For Linux
 
@@ -102,3 +102,67 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 #### 2. Install Deno via package manager
 
 ### Install Deno For MacOS
+
+
+
+## Deno 101
+
+Untuk memulai menggunakan **Deno** ada 3 langkah yang bisa kita gunakan :
+
+<img src="Assets/Deno.png">
+
+### REPL Mode Execution
+
+Untuk menggunakan Deno dalam Mode ***REPL*** Mode, pada ***cmd.exe*** ketik :
+
+```
+deno
+```
+
+Eksekusi ***statement*** di bawah ini :
+
+```javascript
+1+1
+```
+
+Kemudian eksekusi ***statement*** di bawah ini untuk menampilkan pesan Hello World
+
+```javascript
+console.log("Hello World")
+```
+
+Jika berhasil maka akan memproduksi :
+
+```
+Hello World
+```
+
+Jika ingin keluar dari ***REPL Mode***, klik ***CTRL+Shift+D***.
+
+### Script Execution
+
+Jika kita ingin mengeksekusi sebuah ***file javascript*** yang telah diubah menjadi ***typescript*** menggunakan ***deno***, eksekusi perintah di bawah ini :
+
+```
+deno run https://deno.land/std/examples/welcome.ts
+```
+
+Maka anda akan melihat ***output*** informasi seperti di bawah ini :
+
+```
+Download https://deno.land/std/examples/welcome.ts
+Warning Implicitly using master branch https://deno.land/std/examples/welcome.ts
+Compile https://deno.land/std/examples/welcome.ts
+Welcome to Deno 🦕
+```
+
+### Eval Mode
+
+Mengeksekusi dalam mode ***eval*** jarang sekali dilakukan dan hanya digunakan di kasus-kasus tertentu saja. Di versi ***node.js*** sebelumnya ***eval*** mode merupakan model eksekusi yang rentan untuk dieksploitasi, pada ***deno*** kerentanan tersebut sudah di perbaiki. 
+
+Untuk mengetahui cara mengeksekusi dalam ***eval*** mode, eksekusi contoh kode di bawah ini :
+
+```
+deno eval "console.log(30933 + 404)"
+```
+
