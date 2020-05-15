@@ -76,3 +76,35 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 
 ### Install Deno For MacOS
+
+
+
+## Deno 101
+
+Untuk memulai menggunakan **Deno** ada 3 langkah yang bisa kita gunakan :
+
+<img src="Assets/Deno.png">
+
+Untuk menggunakan Deno dalam Mode REPL Mode, pada cmd.exe ketik :
+
+```
+deno
+```
+
+Eksekusi statement di bawah ini :
+
+```javascript
+1+1
+```
+
+Kemudian Eksekusi Hello World
+
+```javascript
+console.log("Hello World")
+```
+
+Jika berhasil maka akan memproduksi :
+
+```
+Hello World
+```
