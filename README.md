@@ -113,7 +113,7 @@ Hello World
 
 Jika ingin keluar dari ***REPL Mode***, klik ***CTRL+Shift+D***.
 
-### Execution Script
+### Script Execution
 
 Jika kita ingin mengeksekusi sebuah ***file javascript*** yang telah diubah menjadi ***typescript*** menggunakan ***deno***, eksekusi perintah di bawah ini :
 
@@ -121,12 +121,22 @@ Jika kita ingin mengeksekusi sebuah ***file javascript*** yang telah diubah menj
 deno run https://deno.land/std/examples/welcome.ts
 ```
 
-Maka anda akan melihat output informasi seperti di bawah ini :
+Maka anda akan melihat ***output*** informasi seperti di bawah ini :
 
 ```
 Download https://deno.land/std/examples/welcome.ts
 Warning Implicitly using master branch https://deno.land/std/examples/welcome.ts
 Compile https://deno.land/std/examples/welcome.ts
 Welcome to Deno 🦕
+```
+
+### Eval Mode
+
+Mengeksekusi dalam mode ***eval*** jarang sekali dilakukan dan hanya digunakan di kasus-kasus tertentu saja. Di versi ***node.js*** sebelumnya ***eval*** mode merupakan model eksekusi yang rentan untuk dieksploitasi, pada ***deno*** kerentanan tersebut sudah di perbaiki. 
+
+Untuk mengetahui cara mengeksekusi dalam ***eval*** mode, eksekusi contoh kode di bawah ini :
+
+```
+deno eval "console.log(30933 + 404)"
 ```
 
