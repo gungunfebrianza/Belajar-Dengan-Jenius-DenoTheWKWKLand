@@ -168,7 +168,7 @@ deno run https://a.com/test/hello.ts
 
 Terdapat struktur yang bisa kita pelajari :
 
-<img src="Assets/DenoSubcommand.png">
+<img src="Assets/DenoSubCommand.png">
 
 
 
