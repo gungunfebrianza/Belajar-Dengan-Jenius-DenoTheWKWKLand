@@ -25,6 +25,11 @@
         1. [Data Types](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
         1. [Type Inference](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
         1. [Typed Array](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
+        1. [Generic Array](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#generic-array)
+        1. [Enumeration](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#enumeration)
+        1. [Function Return Void](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#function-return-void)
+        1. [Lambda](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#lambda)
+        1. [Interface](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#interface)
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
 
@@ -259,3 +264,7 @@ Kita dapat melihat gambaran besar lebih jauh dari ***Deno Options*** dan ***Sub-
 + [Arifin Izz](https://github.com/arifinizzah)
 
 Feel free guys to make contribution for the community <3 just pull request.
+
+## Sponsor
+<img src="Assets/SponsorPinterCoding.png" width=25%>
+<img src="Assets/SponsorMarketkoin.png" width=20%>
