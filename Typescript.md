@@ -28,6 +28,57 @@ var usia: number = 26;
 var nama: string = "Maudy Ayunda";
 ```
 
+##### *Number*
+
+Sebuah angka di dalam *typescript* merupakan tipe data *number*.
+
+```typescript
+let usia: number = 26;
+```
+
+***Javascript*** adalah bahasa dengan karakteristik ***types*** : ***Loosely typed language*** yaitu tidak mengenal ***type*** data seperti ***integer, short, long*** atau ***float*** dan seterusnya. Begitu juga di dalam ***typescript*** seluruh ***number*** representasinya di dalam sistem diubah menjadi 64***-bit floating point***. 
+
+Namun begitu kita tetap bisa menyimpan sebuah nilai angka desimal dalam variabel ***typescript***.
+
+```typescript
+let tinggi: number = 900.888;	
+```
+
+***Typescript*** juga mendukung ***number-literal*** dalam bentuk ***hex, binary*** dan ***octal***. Perhatikan kode dibawah ini dan ***prefix*** yang digunakan :
+
+```typescript
+let dec: number = 27;
+let hex: number = 0x001b;
+let binary: number = 0b11011;
+let octal: number= 0o0033;	
+```
+
+##### *String*
+
+Kita bisa menyimpan nilai ***string*** ke dalam sebuah variabel menggunakan ***double*** atau ***single quote***. Perhatikan kode di bawah ini :
+
+```typescript
+let nama: string = "Gun Gun Febrianza";
+nama = 'Gun Gun Febrianza';
+```
+
+***Typescript*** juga mendukung ***template string*** menggunakan ***syntax ${expression}***. Perhatikan kode di bawah ini :
+
+```typescript
+var nama: string ="Gun Gun Febrianza";
+let nama: string = `Hallo ${nama}, kami doakan semoga anda selalu sehat.`;
+```
+
+#### *Union*
+
+Ada saatnya kita menginginkan variabel yang bisa disimpan dengan berbagai ***type***, selain menggunakan ***type any*** kita bisa menggunakan ***union*** . Sebuah ***union*** ***type***adalah ***type***kombinasi dari berbagai ***type***. Kode di bawah ini adalah variabel dengan kemampuan untuk bisa menampung dua ***type***data sekaligus yaitu sebagai ***boolean*** atau ***number***.
+
+```typescript
+let isVisible : boolean|number = true;
+isVisible = 1; // OK
+isVisible = "yes"; // akan menghasilkan error
+```
+
 #### *Type Inference*
 
 Selain ketiga tersebut kita bisa menggunakan tipe ***any*** yang bisa di isi apa saja atau disebut ***Type Inference***.
