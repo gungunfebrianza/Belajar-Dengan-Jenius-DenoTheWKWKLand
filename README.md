@@ -20,6 +20,7 @@
         1. [Deno Options](#1-deno-options)
         1. [Deno Sub Command](#2-deno-sub-command)
         1. [Deno Command Structure](#3-deno-command-structure)
+- Other Examples
 - [Contributor](#contributor)
 
 ## Lets Destroy Node.js developer.
@@ -246,7 +247,7 @@ Kita dapat melihat gambaran besar lebih jauh dari ***Deno Options*** dan ***Sub-
 
 ## Other Examples :
 
-#### [Node Simple Framework](https://github.com/nauvalazhar/deno-simple-framework) by Muhamad Nauval Azhar @[nauvalazhar](nauvalazhar)
+#### [Deno Simple Framework](https://github.com/nauvalazhar/deno-simple-framework) by Muhamad Nauval Azhar @[nauvalazhar](nauvalazhar)
 
 ## Contributor
 
