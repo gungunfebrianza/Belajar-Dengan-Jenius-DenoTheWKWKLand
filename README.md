@@ -1,7 +1,7 @@
 # Mastering-DenoTheWKWKLand
 Lets Destroy Node.js developer.
 
-<img src="Cover.PNG" width=66%>
+<img src="Cover.png" width=66%>
 
 ## Installation
 
