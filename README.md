@@ -172,3 +172,8 @@ Terdapat struktur yang bisa kita pelajari :
 
 
 
+3. #### *Deno Command Structure*
+
+Kita dapat melihat gambaran besar lebih jauh dari ***Deno Options*** dan ***Sub-commands*** dengan gambar di bawah ini :
+
+<img src="Assets/DenoCommand.png">
