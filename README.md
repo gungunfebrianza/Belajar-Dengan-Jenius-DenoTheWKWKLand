@@ -1,4 +1,27 @@
 # Mastering-DenoTheWKWKLand
+
+## Table of Contens
+    
+- [Lets Destroy Node.js developer](#lets-destroy-nodejs-developer)
+- [Installation](#installation)
+    - [Install Deno For Windows](#install-deno-for-windows)
+        1. [Install Chocolatey Package Manager](#1-install-chocolatey-package-manager)
+        1. [Install Deno Via Package Manager](#2-install-deno-via-package-manager)
+        1. [Check Deno](#3-check-deno)
+    - [Install Deno For Linux](#install-deno-for-linux)
+        1. [Install Deno via Curl](#1-install-deno-via-curl)
+        1. [Install Deno via Package Manager](#2-install-deno-via-package-manager)
+    - [Install Deno For MacOS](#install-deno-for-macos)
+- [Deno 101](#deno-101)
+    - [REPL Mode Execution](#repl-mode-execution)
+    - [Script Execution](#script-execution)
+    - [Eval Mode](#eval-mode)
+    - [Deno Command](#deno-command)
+        1. [Deno Options](#1-deno-options)
+        1. [Deno Sub Command](#2-deno-sub-command)
+        1. [Deno Command Structure](#3-deno-command-structure)
+- [Contributor](#contributor)
+
 ## Lets Destroy Node.js developer.
 
 <img src="Cover.png" width=66%>
@@ -9,7 +32,7 @@
 
 Kita akan melakukan instalasi ***Deno*** menggunakan ***Package Manager*** yang disebut dengan ***Chocolatey*** :
 
-#### 1. *Install Chocolatey Package Manager*
+#### 1. Install Chocolatey Package Manager
 
 Jalankan **Powershell** (**run as administrator**), kemudian eksekusi perintah di bawah ini :
 
@@ -45,7 +68,7 @@ Maka informasi versi ***choco*** akan di tampilkan :
 Chocolatey v0.10.15
 ```
 
-#### 2. *Install Deno Via Package Manager*
+#### 2. Install Deno Via Package Manager
 
 Lakukan instalasi ***Deno*** menggunakan perintah di bawah ini :
 
@@ -73,7 +96,7 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 ### Install Deno For Linux
 
-#### 1. Install Deno via curl
+#### 1. Install Deno via Curl
 
 1. Buka terminal lalu ketik 
 
@@ -83,9 +106,9 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
     
 2. Jika sudah selesai maka akan terlihat seperti berikut
 
-    <img src="Assets/CurlSetup.jpg">
+    <img width="66%" src="Assets/CurlSetup.jpg">
     
-    jalankan command `deno --help`, apabila muncul "__commnad not found: deno__"
+    jalankan command `deno -V`, apabila muncul "__commnad not found: deno__"
     maka lanjut ke step berikutnya
 
 3. Menambahkan path ke bash_profile atau bashrc 
@@ -100,9 +123,9 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
         ```
       ganti bagian `<username>` dengan username kalian
       
-    - Save, lalu restart terminal dan jalankan `deno --help`
+    - Save, lalu restart terminal dan jalankan `deno -V`
     
-#### 2. Install Deno via package manager
+#### 2. Install Deno via Package Manager
 
 ##### Via [Brew](https://brew.sh/)
 
@@ -120,7 +143,7 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 ### Install Deno For MacOS
 
-
+---
 
 ## Deno 101
 
@@ -187,7 +210,7 @@ deno eval "console.log(30933 + 404)"
 
 **Deno** memiliki ***Options & Sub Commands*** yang dapat kita gunakan :
 
-#### 1. *Deno Options*
+#### 1. Deno Options
 
 Saat kita mengeksekusi perintah dengan *options* di bawah ini :
 
@@ -201,7 +224,7 @@ Terdapat struktur yang bisa kita pelajari :
 
 
 
-#### 2. *Deno Sub Command*
+#### 2. Deno Sub Command
 
 Saat kita mengeksekusi perintah dengan *sub command* di bawah ini :
 
@@ -215,13 +238,13 @@ Terdapat struktur yang bisa kita pelajari :
 
 
 
-#### 3. *Deno Command Structure*
+#### 3. Deno Command Structure
 
 Kita dapat melihat gambaran besar lebih jauh dari ***Deno Options*** dan ***Sub-commands*** dengan gambar di bawah ini :
 
 <img src="Assets/DenoCommand.png">
 
-## Contributor :
-+ [Arrifin Iz](https://github.com/arifinizzah)
+## Contributor
++ [Arifin Izz](https://github.com/arifinizzah)
 
-  Feel free guys to make contribution for the community <3 just pull request.
+Feel free guys to make contribution for the community <3 just pull request.
