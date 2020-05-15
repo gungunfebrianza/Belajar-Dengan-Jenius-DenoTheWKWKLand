@@ -9,7 +9,7 @@ Lets Destroy Node.js developer.
 
 Jalankan Powershell (run as administrator), kemudian eksekusi perintah di bawah ini :
 
-<img src="assets/PoweshellSetup.JPG" width=75%>
+<img src="Assets/PoweshellSetup.JPG" width=75%>
 
 
 
