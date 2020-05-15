@@ -9,7 +9,7 @@ Lets Destroy Node.js developer.
 
 Kita akan melakukan instalasi ***Deno*** menggunakan ***Package Manager*** yang disebut dengan ***Chocolatey*** :
 
-#### *Install Chocolatey Package Manager*
+#### 1. Install Chocolatey Package Manager
 
 Jalankan **Powershell** (**run as administrator**), kemudian eksekusi perintah di bawah ini :
 
@@ -45,13 +45,31 @@ Maka informasi versi ***choco*** akan di tampilkan :
 Chocolatey v0.10.15
 ```
 
-#### *Install Deno Via Package Manager*
+#### 2. *Install Deno Via Package Manager*
+
+Lakukan instalasi ***Deno*** menggunakan perintah di bawah ini :
 
 ```
 choco install deno
 ```
 
+Jika berhasil maka dalam d***irectory Chocolatey Package Repository***, ***package Deno*** akan tersimpan :
 
+```
+C:\ProgramData\chocolatey\lib\deno
+```
+
+#### 3. Check Deno
+
+Check Eksistensi ***Deno*** dengan mengeksekusi perintah di bawah ini :
+
+```
+deno -V
+```
+
+Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
+
+<img src="assets/Deno.JPG">
 
 ### Install Deno For Linux
 
