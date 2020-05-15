@@ -73,3 +73,47 @@ function beauty(): void {
 }
 ```
 
+#### *Lambda*
+
+Contoh **lambda** dan **type inference**.
+
+```typescript
+var func1 = function(i: number): number { return i * i; }
+var func2 = function(i: number) { return i * i; }
+var func3 = (i: number): number => { return i * i; }
+var func4 = (i: number) => { return i * i; }
+var func5 = (i: number) => i * i;
+```
+
+#### *Interface*
+
+Contoh **interface**, kita bisa membuat opsional ***properties*** yang ditandai dengan simbol ?
+
+```typescript
+interface Manusia {
+nama: string;
+umur?: number;
+makan(): void;
+}
+```
+
+Contoh ***Object*** hasil implementasi dari ***interface*** di atas.
+
+```typescript
+var m: Manusia = { nama: "Maudy", makan: () => {} };
+var m: Manusia = { nama: "Maudy", umur: 22, makan: () => {} };
+```
+
+Contoh ***Interface*** untuk sebuah ***function***.
+
+```typescript
+interface fungsiCari {
+	(source: string, subString: string): boolean;
+}
+
+var data: fungsiCari;
+data = function(src: string, sub: string) {
+	return src.search(sub) != -1;
+}	
+```
+
