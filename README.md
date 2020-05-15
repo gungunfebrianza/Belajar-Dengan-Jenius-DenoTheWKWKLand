@@ -121,3 +121,12 @@ Jika kita ingin mengeksekusi sebuah ***file javascript*** yang telah diubah menj
 deno run https://deno.land/std/examples/welcome.ts
 ```
 
+Maka anda akan melihat output informasi seperti di bawah ini :
+
+```
+Download https://deno.land/std/examples/welcome.ts
+Warning Implicitly using master branch https://deno.land/std/examples/welcome.ts
+Compile https://deno.land/std/examples/welcome.ts
+Welcome to Deno 🦕
+```
+
