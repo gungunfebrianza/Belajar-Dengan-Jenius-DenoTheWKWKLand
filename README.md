@@ -1,6 +1,8 @@
 # Mastering-DenoTheWKWKLand
 Lets Destroy Node.js developer.
 
+<img src="Cover.PNG" width=66%>
+
 ## Installation
 
 ### Install Deno For Windows
