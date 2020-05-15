@@ -73,6 +73,32 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 ### Install Deno For Linux
 
+#### 1. Install Deno via curl
 
+- Buka terminal lalu ketik 
+
+    ``` curl -fsSL https://deno.land/x/install/install.sh | sh ```
+    
+- Jika sudah selesai maka akan terlihat seperti berikut
+
+    <img src="Assets/CurlSetup.jpg">
+    
+    jalankan command `deno --help`, apabila muncul "__commnad not found: deno__"
+    maka lanjut ke step berikutnya
+
+- Menambahkan path ke `.bash_profile` / `.bashrc` 
+
+    - ketik `nano .bashrc` atau `nano .zshrc` tergantung dari shell yg kalian gunakan
+    
+    - copy bagian yang seperti berikut lalu pastekan pada line terakhir `.bashrc` atau `.zshrc`
+      
+        ```
+        export DENO_INSTALL="/home/<username>/.deno"
+        export PATH="$DENO_INSTALL/bin:$PATH"
+        ```
+      
+    - Save, lalu restart terminal dan jalankan `deno --help`
+    
+#### 2. Install Deno via package manager
 
 ### Install Deno For MacOS
