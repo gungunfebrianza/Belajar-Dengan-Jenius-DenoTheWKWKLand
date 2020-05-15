@@ -136,10 +136,9 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
     - copy bagian yang seperti berikut lalu pastekan pada line terakhir `.bashrc` atau `.zshrc`
       
         ```
-        export DENO_INSTALL="/home/<username>/.deno"
+        export DENO_INSTALL="$HOME/.deno"
         export PATH="$DENO_INSTALL/bin:$PATH"
         ```
-      ganti bagian `<username>` dengan username kalian
       
     - Save, lalu restart terminal dan jalankan `deno -V`
     
