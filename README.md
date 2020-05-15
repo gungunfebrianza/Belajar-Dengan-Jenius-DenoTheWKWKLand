@@ -87,7 +87,7 @@ Untuk memulai menggunakan **Deno** ada 3 langkah yang bisa kita gunakan :
 
 ### REPL Mode Execution
 
-Untuk menggunakan Deno dalam Mode ***REPL*** Mode, pada ***cmd.exe*** ketik :
+Untuk menggunakan Deno dalam Mode ***REPL*** **(Read – Eval – Print – Loop\)**, pada ***cmd.exe*** ketik :
 
 ```
 deno
@@ -139,4 +139,36 @@ Untuk mengetahui cara mengeksekusi dalam ***eval*** mode, eksekusi contoh kode d
 ```
 deno eval "console.log(30933 + 404)"
 ```
+
+### Deno Command
+
+**Deno** memiliki ***Options & Sub Commands*** yang dapat kita gunakan :
+
+#### 1. *Deno Options*
+
+Saat kita mengeksekusi perintah dengan *options* di bawah ini :
+
+```
+deno --help
+```
+
+Terdapat struktur yang bisa kita pelajari :
+
+<img src="Assets/DenoOptions.png">
+
+
+
+#### 2. *Deno Sub Command*
+
+Saat kita mengeksekusi perintah dengan *sub command* di bawah ini :
+
+```
+deno run https://a.com/test/hello.ts
+```
+
+Terdapat struktur yang bisa kita pelajari :
+
+<img src="Assets/DenoSubcommand.png">
+
+
 
