@@ -117,3 +117,43 @@ data = function(src: string, sub: string) {
 }	
 ```
 
+#### *Class & Properties*
+
+Contoh sebuah ***class*** dengan ***properties*** dan ***function***.
+
+```typescript
+class Math {
+	x := number;
+	hitungSQRT() { 
+        return Math.sqrt(this.x * this.x + this.y * this.y); 
+    }
+}
+```
+
+#### *Class* & *Constructor*
+
+Contoh sebuah ***class*** dengan ***constructor.***
+
+```typescript
+class Math {
+	x := number;
+	constructor(x: number, public y: number = 0) {
+		this.x = x;
+	}
+}
+```
+
+#### *Class & Static* *Member*
+
+Contoh sebuah ***class*** dengan ***static member***.
+
+```typescript
+class Math {
+	x := number;
+	constructor(x: number, public y: number = 0) {
+		this.x = x;
+	}
+	static koordinat = new A(0, 0);
+}
+```
+
