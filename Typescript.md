@@ -46,3 +46,30 @@ Contoh sebuah ***collection***, di dalam ***typescript*** terdapat terdapat ***t
 var list: number[] = [1, 2, 3];
 ```
 
+#### ***Generic Array***
+
+Contoh sebuah ***collection***, di dalam ***typescript*** terdapat ***generic array***.
+
+```typescript
+var list: Array<number> = [1, 2, 3];
+```
+
+#### *Enumeration*
+
+Contoh sebuah ***Enumeration***.
+
+```typescript
+enum Love {Maudy, Ayunda, Faza};
+var c: Love = Love.Maudy;
+```
+
+#### *Function Return Void*
+
+Contoh sebuah ***function*** dengan ***return void***.
+
+```typescript
+function beauty(): void {
+	alert("Maudy is beautiful");
+}
+```
+
