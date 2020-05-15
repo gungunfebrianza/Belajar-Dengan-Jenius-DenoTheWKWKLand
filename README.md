@@ -85,19 +85,21 @@ Untuk memulai menggunakan **Deno** ada 3 langkah yang bisa kita gunakan :
 
 <img src="Assets/Deno.png">
 
-Untuk menggunakan Deno dalam Mode REPL Mode, pada cmd.exe ketik :
+### REPL Mode Execution
+
+Untuk menggunakan Deno dalam Mode ***REPL*** Mode, pada ***cmd.exe*** ketik :
 
 ```
 deno
 ```
 
-Eksekusi statement di bawah ini :
+Eksekusi ***statement*** di bawah ini :
 
 ```javascript
 1+1
 ```
 
-Kemudian Eksekusi Hello World
+Kemudian eksekusi ***statement*** di bawah ini untuk menampilkan pesan Hello World
 
 ```javascript
 console.log("Hello World")
@@ -108,3 +110,14 @@ Jika berhasil maka akan memproduksi :
 ```
 Hello World
 ```
+
+Jika ingin keluar dari ***REPL Mode***, klik ***CTRL+Shift+D***.
+
+### Execution Script
+
+Jika kita ingin mengeksekusi sebuah ***file javascript*** yang telah diubah menjadi ***typescript*** menggunakan ***deno***, eksekusi perintah di bawah ini :
+
+```
+deno run https://deno.land/std/examples/welcome.ts
+```
+
