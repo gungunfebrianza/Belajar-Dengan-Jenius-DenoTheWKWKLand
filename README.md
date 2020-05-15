@@ -69,7 +69,7 @@ deno -V
 
 Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
-<img src="assets/Deno.JPG">
+<img src="Assets/Deno.JPG">
 
 ### Install Deno For Linux
 
