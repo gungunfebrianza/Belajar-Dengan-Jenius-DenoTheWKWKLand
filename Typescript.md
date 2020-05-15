@@ -157,3 +157,32 @@ class Math {
 }
 ```
 
+#### *Class Instance* 
+
+Contoh sebuah ***object*** dari ***Class Math***.
+
+```typescript
+var p1 = new Math(10 ,20);
+var p2 = new Math(25); //maka y akan bernilai 0
+```
+
+#### *Class Inheritance & Overriding*
+
+Contoh ***inheritance*** dan ***overriding*** dari ***Class Math***.
+
+```typescript
+class koordinat3D extends Math {
+	constructor(x: number, y: number, public z: number = 0) {
+		super(x, y); //wajib menggunakan keyword super
+	}
+    
+	hitungSQRT() {
+		var d = super.dist();
+		return Math.sqrt(d * d + this.z * this.z);
+	}
+}
+```
+
+#### *Modules*
+
+Contoh sebuah ***Modules***.
