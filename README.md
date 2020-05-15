@@ -19,11 +19,24 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 Proses instalasi sedang di lakukan, kita akan memiliki **directory Chocolatey Package Repository** di :
 
+```
 **C:\ProgramData\chocolatey\lib**
+```
 
 Membuat **directory di Chocolatey Binary** di :
 
-**C:\ProgramData\chocolatey\bin'**
+```
+**C:\ProgramData\chocolatey\bin**
+```
+
+Pastikan chocholatey sudah terpasang dengan cara mengeksekusi perintah di bawah ini dalam cmd.exe :
+
+```
+choco
+Chocolatey v0.10.15
+```
+
+
 
 ### Install Deno For Linux
 
