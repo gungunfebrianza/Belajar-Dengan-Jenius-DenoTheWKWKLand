@@ -1,5 +1,5 @@
 # Mastering-DenoTheWKWKLand
-Lets Destroy Node.js developer.
+## Lets Destroy Node.js developer.
 
 <img src="Cover.png" width=66%>
 
@@ -9,7 +9,7 @@ Lets Destroy Node.js developer.
 
 Kita akan melakukan instalasi ***Deno*** menggunakan ***Package Manager*** yang disebut dengan ***Chocolatey*** :
 
-#### 1. Install Chocolatey Package Manager
+#### 1. *Install Chocolatey Package Manager*
 
 Jalankan **Powershell** (**run as administrator**), kemudian eksekusi perintah di bawah ini :
 
@@ -69,7 +69,7 @@ deno -V
 
 Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
-<img src="assets/Deno.JPG">
+<img src="Assets/Deno.JPG">
 
 ### Install Deno For Linux
 
