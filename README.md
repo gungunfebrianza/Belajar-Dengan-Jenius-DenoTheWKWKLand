@@ -1,6 +1,6 @@
 # Mastering-DenoTheWKWKLand
 
-## Table of Contens
+## Table of Contents
 
 - [Lets Destroy Node.js developer](#lets-destroy-nodejs-developer)
 - [Installation](#installation)
