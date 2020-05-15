@@ -1,4 +1,5 @@
-# Mastering-DenoTheWKWKLand
+# Mestering Deno + PostgreSQL
+<img src="Cover.png" width=66%>
 
 ## Table of Contents
 
@@ -42,7 +43,6 @@
 
 ## Lets Destroy Node.js developer.
 
-<img src="Cover.png" width=66%>
 
 ## Installation
 
