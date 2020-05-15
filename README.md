@@ -83,7 +83,7 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
     
 2. Jika sudah selesai maka akan terlihat seperti berikut
 
-    <img width="500" src="Assets/CurlSetup.jpg">
+    <img width="66%" src="Assets/CurlSetup.jpg">
     
     jalankan command `deno --help`, apabila muncul "__commnad not found: deno__"
     maka lanjut ke step berikutnya
@@ -120,7 +120,7 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 ### Install Deno For MacOS
 
-
+---
 
 ## Deno 101
 
