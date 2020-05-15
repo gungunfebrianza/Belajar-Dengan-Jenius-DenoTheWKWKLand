@@ -20,6 +20,7 @@
         1. [Deno Options](#1-deno-options)
         1. [Deno Sub Command](#2-deno-sub-command)
         1. [Deno Command Structure](#3-deno-command-structure)
+- [Typescript](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md)
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
 
