@@ -321,6 +321,7 @@ deno run --allow-net Example.ts
 ## Contributor
 
 + [Arifin Izz](https://github.com/arifinizzah)
++ [Bramaudi](https://github.com/bramaudi)
 
 Feel free guys to make contribution for the community <3 just pull request.
 
