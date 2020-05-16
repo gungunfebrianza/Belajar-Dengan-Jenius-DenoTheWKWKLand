@@ -1,3 +1,21 @@
+- [Typescript](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md)
+    - [Typescript Quick Introduction](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#typescript-cheatsheet)
+        1. [Data Types](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
+        1. [Union](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#union)
+        1. [Type Inference](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
+        1. [Typed Array](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
+        1. [Generic Array](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#generic-array)
+        1. [Enumeration](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#enumeration)
+        1. [Void Type](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#function-return-void)
+        1. [Tuples](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#tuples)
+        1. [Lambda](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#lambda)
+        1. [Interface](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#interface)
+        1. [Class & Properties](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class--properties)
+        1. [Class & Constructor](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class--constructor)
+        1. [Class & Static Member](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class--static-member)
+        1. [Class Inheritance & Overriding](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class-inheritance--overriding)
+        1. [Modules](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#modules)
+
 ## Typescript
 
 **Typescript** adalah sebuah ***superset javascript*** yang dikembangkan oleh ***Microsoft***, sebuah ***open source project*** yang menginspirasi **Ryan Dahl** untuk mengembangkan **Deno** sebuah ***Runtime Engine*** yang dapat digunakan untuk mengeksekusi ***Typescript***.
