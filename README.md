@@ -309,7 +309,7 @@ deno run --allow-net Example.ts
 
 ## Other Examples :
 
-#### [Deno Simple Framework](https://github.com/nauvalazhar/deno-simple-framework) by Muhamad Nauval Azhar @[nauvalazhar](nauvalazhar)
+#### [Deno Simple Framework](https://github.com/nauvalazhar/deno-simple-framework) by Muhamad Nauval Azhar @[nauvalazhar](https://github.com/nauvalazhar)
 
 ## Contributor
 
