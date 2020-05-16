@@ -1,4 +1,4 @@
-# Mestering Deno + PostgreSQL
+# Mastering Deno + PostgreSQL
 <img src="Cover.png" width=66%>
 
 ## Table of Contents
@@ -21,24 +21,24 @@
         1. [Deno Options](#1-deno-options)
         1. [Deno Sub Command](#2-deno-sub-command)
         1. [Deno Command Structure](#3-deno-command-structure)
-        1. [Run Javascript & Typescript Files]()
-- [Typescript](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md)
-    - [Typescript Quick Introduction](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#typescript-cheatsheet)
-        1. [Data Types](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
-        1. [Union](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#union)
-        1. [Type Inference](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
-        1. [Typed Array](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#type-inference)
-        1. [Generic Array](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#generic-array)
-        1. [Enumeration](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#enumeration)
-        1. [Void Type](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#function-return-void)
-        1. [Tuples](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#tuples)
-        1. [Lambda](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#lambda)
-        1. [Interface](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#interface)
-        1. [Class & Properties](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class--properties)
-        1. [Class & Constructor](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class--constructor)
-        1. [Class & Static Member](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class--static-member)
-        1. [Class Inheritance & Overriding](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#class-inheritance--overriding)
-        1. [Modules](https://github.com/gungunfebrianza/Mastering-DenoTheWKWKLand/blob/master/Typescript.md#modules)
+        1. [Run Javascript & Typescript Files](#run-javascript--typescript-files)
+- [Typescript](./Typescript.md)
+    - [Typescript Quick Introduction](./Typescript.md#typescript-cheatsheet)
+        1. [Data Types](./Typescript.md#type-inference)
+        1. [Union](./Typescript.md#union)
+        1. [Type Inference](./Typescript.md#type-inference)
+        1. [Typed Array](./Typescript.md#type-inference)
+        1. [Generic Array](./Typescript.md#generic-array)
+        1. [Enumeration](./Typescript.md#enumeration)
+        1. [Void Type](./Typescript.md#function-return-void)
+        1. [Tuples](./Typescript.md#tuples)
+        1. [Lambda](./Typescript.md#lambda)
+        1. [Interface](./Typescript.md#interface)
+        1. [Class & Properties](./Typescript.md#class--properties)
+        1. [Class & Constructor](./Typescript.md#class--constructor)
+        1. [Class & Static Member](./Typescript.md#class--static-member)
+        1. [Class Inheritance & Overriding](./Typescript.md#class-inheritance--overriding)
+        1. [Modules](./Typescript.md#modules)
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
 
@@ -166,6 +166,11 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
     ```
 
 ### Install Deno For MacOS
+
+
+<p align="right">
+    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+</p>
 
 ---
 
@@ -305,18 +310,25 @@ Untuk mengeksekusi ***typescript file*** :
 deno run --allow-net Example.ts
 ```
 
-
+<p align="right">
+    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+</p>
 
 ## Other Examples :
 
-#### [Deno Simple Framework](https://github.com/nauvalazhar/deno-simple-framework) by Muhamad Nauval Azhar @[nauvalazhar](nauvalazhar)
+#### [Deno Simple Framework](https://github.com/nauvalazhar/deno-simple-framework) by Muhamad Nauval Azhar @[nauvalazhar](https://github.com/nauvalazhar)
 
 ## Contributor
 
 + [Arifin Izz](https://github.com/arifinizzah)
++ [Bramaudi](https://github.com/bramaudi)
 
 Feel free guys to make contribution for the community <3 just pull request.
 
 ## Sponsor
 <img src="Assets/SponsorPinterCoding.png" width=25%>
 <img src="Assets/SponsorMarketkoin.png" width=20%>
+
+<p align="right">
+    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+</p>
