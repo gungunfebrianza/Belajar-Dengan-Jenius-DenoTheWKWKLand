@@ -1,3 +1,21 @@
+- [Typescript](#typescript)
+    - [Typescript Quick Introduction](#typescript-cheatsheet)
+        1. [Data Types](#type-inference)
+        1. [Union](#union)
+        1. [Type Inference](#type-inference)
+        1. [Typed Array](#type-inference)
+        1. [Generic Array](#generic-array)
+        1. [Enumeration](#enumeration)
+        1. [Void Type](#function-return-void)
+        1. [Tuples](#tuples)
+        1. [Lambda](#lambda)
+        1. [Interface](#interface)
+        1. [Class & Properties](#class--properties)
+        1. [Class & Constructor](#class--constructor)
+        1. [Class & Static Member](#class--static-member)
+        1. [Class Inheritance & Overriding](#class-inheritance--overriding)
+        1. [Modules](#modules)
+
 ## Typescript
 
 **Typescript** adalah sebuah ***superset javascript*** yang dikembangkan oleh ***Microsoft***, sebuah ***open source project*** yang menginspirasi **Ryan Dahl** untuk mengembangkan **Deno** sebuah ***Runtime Engine*** yang dapat digunakan untuk mengeksekusi ***Typescript***.
@@ -331,3 +349,6 @@ import G = Geometry;
 var s2 = new G.Square(10);
 ```
 
+<p align="right">
+    <b><a href="#typescript">↥ back to top</a></b>
+</p>
