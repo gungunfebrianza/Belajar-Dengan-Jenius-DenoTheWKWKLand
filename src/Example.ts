@@ -1,4 +1,5 @@
-import { serve } from "https://deno.land/std@0.50.0/http/server.ts";
-for await (const req of serve({ port: 8000 })) {
-  req.respond({ body: "Hello World\n" });
-}
+function getFinalPrice(price, discount) {
+  return price - price/discount;
+  }
+  console.log(getFinalPrice(100, 10));
+  console.log(getFinalPrice(100, "10%"));
