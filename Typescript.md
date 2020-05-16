@@ -349,3 +349,6 @@ import G = Geometry;
 var s2 = new G.Square(10);
 ```
 
+<p align="right">
+    <b><a href="#typescript">↥ back to top</a></b>
+</p>
