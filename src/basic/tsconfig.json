@@ -1,0 +1,8 @@
+  {
+    "compilerOptions": {
+      "baseUrl": "basic",
+      "outDir": "./dist",
+      "noEmitOnError": true,
+      "target": "es5"
+    }
+  }
