@@ -1,8 +1,9 @@
-  {
-    "compilerOptions": {
-      "baseUrl": "basic",
-      "outDir": "./dist",
-      "noEmitOnError": true,
-      "target": "es5"
-    }
+{
+  "compilerOptions": {
+    "baseUrl": "basic",
+    "outDir": "./dist",
+    "noEmitOnError": true,
+    "target": "es5",
+    "watch": true
   }
+}
