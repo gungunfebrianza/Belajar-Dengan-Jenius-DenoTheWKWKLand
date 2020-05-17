@@ -4,3 +4,5 @@ function arithmeticOperation(params: number): number {
 }
 
 console.log(arithmeticOperation(2));
+
+  var harga : number;
