@@ -19,9 +19,14 @@
     - [Eval Mode](#eval-mode)
     - [Deno Command](#deno-command)
         1. [Deno Options](#1-deno-options)
-        1. [Deno Sub Command](#2-deno-sub-command)
-        1. [Deno Command Structure](#3-deno-command-structure)
-        1. [Run Javascript & Typescript Files](#run-javascript--typescript-files)
+        2. [Deno Sub Command](#2-deno-sub-command)
+        3. [Deno Command Structure](#3-deno-command-structure)
+        4. [Run Javascript & Typescript Files](#run-javascript--typescript-files)
+     - [Deno Cutom Build in Function](#deno-custom-build-in-function)
+	      1. [Deno Router](#1-deno-router)
+	      2. [Deno Env](#2-deno-env)
+	      3. [Deno Flash](#3-deno-flash)
+	      4. [Deno View](#4-deno-view)
 - [Typescript](./Typescript.md)
     - [Typescript Quick Introduction](./Typescript.md#typescript-cheatsheet)
         1. [Data Types](./Typescript.md#type-inference)
@@ -124,45 +129,45 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 1. Buka terminal eksekusi perintah di bawah ini :
 
-    ``` 
-    curl -fsSL https://deno.land/x/install/install.sh | sh 
     ```
-    
+    curl -fsSL https://deno.land/x/install/install.sh | sh
+    ```
+
 2. Jika berhasil maka proses instalasi akan dilakukan :
 
     <img width="66%" src="Assets/CurlSetup.jpg">
-    
+
     jalankan command `deno -V`, apabila muncul "__commnad not found: deno__"
     maka lanjut ke step berikutnya
 
-3. Menambahkan path ke bash_profile atau bashrc 
+3. Menambahkan path ke bash_profile atau bashrc
 
     - Eksekusi perintah `nano .bashrc` atau `nano .zshrc` tergantung dari **shell** yang kalian gunakan
-    
+
     - Salin perintah di bawah ini dan simpan di baris terakhir di `.bashrc` atau `.zshrc`
-      
+
         ```
         export DENO_INSTALL="/home/<username>/.deno"
         export PATH="$DENO_INSTALL/bin:$PATH"
         ```
       Ganti bagian `<username>` dengan username kalian
-      
+
     - Save, lalu restart terminal dan jalankan `deno -V`
-    
+
 #### 2. Install Deno via Package Manager
 
 ##### Via [Brew](https://brew.sh/)
 
 1. Install brew
 
-    ``` 
+    ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     ```
-   
+
 2. Install Deno via Brew
 
-    ``` 
-    brew install deno 
+    ```
+    brew install deno
     ```
 
 ### Install Deno For MacOS
@@ -227,7 +232,7 @@ Welcome to Deno 🦕
 
 ### Eval Mode
 
-Mengeksekusi dalam mode ***eval*** jarang sekali dilakukan dan hanya digunakan di kasus-kasus tertentu saja. Di versi ***node.js*** sebelumnya ***eval*** mode merupakan model eksekusi yang rentan untuk dieksploitasi, pada ***deno*** kerentanan tersebut sudah di perbaiki. 
+Mengeksekusi dalam mode ***eval*** jarang sekali dilakukan dan hanya digunakan di kasus-kasus tertentu saja. Di versi ***node.js*** sebelumnya ***eval*** mode merupakan model eksekusi yang rentan untuk dieksploitasi, pada ***deno*** kerentanan tersebut sudah di perbaiki.
 
 Untuk mengetahui cara mengeksekusi dalam ***eval*** mode, eksekusi contoh kode di bawah ini :
 
@@ -272,6 +277,127 @@ Terdapat struktur yang bisa kita pelajari :
 Kita dapat melihat gambaran besar lebih jauh dari ***Deno Options*** dan ***Sub-commands*** dengan gambar di bawah ini :
 
 <img src="Assets/DenoCommand.png">
+
+### Deno Custom Build In Function
+
+#### 1. Deno Router
+
+**Deno Router** adalah sebuah fungsi untuk menghandle router pada deno, dimana ini dapat mempermudah untuk menhandle request atau reponse yang diberikan oleh user.
+
+### Before
+```typescript
+import { serve } from "https://deno.land/std@0.50.0/http/server.ts";
+for await (const req of serve({ port: 8000 })) {
+  req.respond({ body: "Hello World\n" });
+}
+```
+
+### After
+``` typescript
+import { listenAndServe, ServerRequest, Response }  from "https://deno.land/std@0.50.0/http/server.ts";
+import { httpRouter  }  from  "./helpers/routers.ts";
+
+// run server
+listenAndServe({ port: 3000 },  httpRouter);
+
+// register router
+router.get(req:  ServerRequest,  res:  Response)  {
+ req.respond({body: "Hello Wordl"});
+},
+```
+#### 2. Deno Env
+
+**Deno Env** adalah sebuah fungsi untuk menghandle enviroment pada deno, dimana ini dapat digunakan user untuk mendaftarkan sebuah nilai untuk diberikan kedalam enviroment deno.
+
+### Before
+```typescript
+import { serve } from "https://deno.land/std@0.50.0/http/server.ts";
+for await (const req of serve({ port: 8000 })) {
+  req.respond({ body: "Hello World\n" });
+}
+```
+
+### After
+``` typescript
+import { listenAndServe, ServerRequest, Response }  from "https://deno.land/std@0.50.0/http/server.ts";
+import { httpRouter }  from  "./helpers/routers.ts";
+import { env }  from  "./helpers/env.ts";
+
+// run server
+listenAndServe({ port: env("PORT",3000).PORT },  httpRouter);
+
+// register router
+router.get(req:  ServerRequest,  res:  Response)  {
+ req.respond({body: "Hello Wordl"});
+},
+```
+#### 3. Deno Flash
+
+**Deno Flash** adalah sebuah fungsi untuk menghandle sebuah nilai yang diberika oleh user, kemudian nilai tersebut akan diteruskan ke sebuah view, lalu kemdian akan di tampilkan baik itu berupa string atau json data.
+
+### Before
+```typescript
+import { serve } from "https://deno.land/std@0.50.0/http/server.ts";
+for await (const req of serve({ port: 8000 })) {
+  req.respond({ body: "Hello World\n" });
+}
+```
+
+### After
+``` typescript
+import { listenAndServe, ServerRequest, Response }  from "https://deno.land/std@0.50.0/http/server.ts";
+import { httpRouter }  from  "./helpers/routers.ts";
+import { env }  from  "./helpers/env.ts";
+import { send }  from  "../helpers/flash.ts";
+
+// run server
+listenAndServe({ port: env("PORT",3000).PORT },  httpRouter);
+
+// set router
+router.get(req:  ServerRequest,  res:  Response)  {
+ // untuk text atau html
+ send(req, "Hello Wordl");
+
+ // untuk json data
+ send(req, {message: "Hello Wordl"});
+}
+```
+#### 3. Deno View
+
+**Deno View** adalah sebuah fungsi untuk merender sebuah template HTML, yang diberikan oleh user .
+
+### Before
+```typescript
+import { serve } from "https://deno.land/std@0.50.0/http/server.ts";
+for await (const req of serve({ port: 8000 })) {
+
+const decoded  =  new  TextDecoder("utf-8");
+const file = Deno.readFileSync(`${Deno.cwd()}/views/index.html`);
+const view  =  decoded.decode(file);
+req.respond({
+ status:  200,
+ headers:  new  Headers({  "content-type":  "text/html"  }),
+ body:  view,
+ });
+}
+```
+
+### After
+``` typescript
+import { listenAndServe, ServerRequest, Response }  from "https://deno.land/std@0.50.0/http/server.ts";
+import { httpRouter }  from  "./helpers/routers.ts";
+import { env }  from  "./helpers/env.ts";
+import { render }  from  "../helpers/render.ts";
+
+// run server
+listenAndServe({ port: env("PORT",3000).PORT },  httpRouter);
+
+// register router
+router.get(req:  ServerRequest,  res:  Response)  {
+ // render html template
+ render(req, "index.html");
+}
+```
 
 ### Run Javascript & Typescript Files
 
@@ -322,6 +448,7 @@ deno run --allow-net Example.ts
 
 + [Arifin Izz](https://github.com/arifinizzah)
 + [Bramaudi](https://github.com/bramaudi)
++ [Restu Wahyu Saputra](https://github.com/restuwahyu13)
 
 Feel free guys to make contribution for the community <3 just pull request.
 
