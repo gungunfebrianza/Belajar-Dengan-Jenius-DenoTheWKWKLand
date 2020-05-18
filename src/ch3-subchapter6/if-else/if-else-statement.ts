@@ -1,11 +1,11 @@
 let time: number = 44;
-let x: string;
+let result: string;
 if (time < 20) {
-  x = "Statement_1";
+  result = "Statement_1";
 } else if (time == 20) {
-  x = "Statement_2";
+  result = "Statement_2";
 } else {
-  x = "Statement_3";
+  result = "Statement_3";
 }
 //output
 //"Statement_3"

@@ -1,14 +1,14 @@
 let day: number = 2;
-let x: string;
+let res: string;
 switch (day) {
   case 0:
-    x = "Hari ini minggu";
+    res = "Hari ini minggu";
     break;
   case 1:
-    x = "Hari ini senin";
+    res = "Hari ini senin";
     break;
   case 2:
-    x = "Hari ini selasa";
+    res = "Hari ini selasa";
     break;
 }
 //ouput
