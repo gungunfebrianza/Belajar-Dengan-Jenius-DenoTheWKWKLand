@@ -1,8 +1,8 @@
-# Mastering Deno + PostgreSQL
+# Belajar Dengan Jenius Deno
 <img src="Cover.png" width=66%>
 
 ## Table of Contents
-
+- [Lets Destroy Node.js developer](#lets-destroy-nodejs-developer)
 - Chapter 1
     - Belajar Open Web Platform
     - Subchapter 1 - Apa itu Open Web Platform
@@ -152,7 +152,7 @@
             - Execution History
         - 3\. Multiline Code Editor
         
-- [Lets Destroy Node.js developer](#lets-destroy-nodejs-developer)
+- Chapter 3
 - [Installation](#installation)
     - [Install Deno For Windows](#install-deno-for-windows)
         1. [Install Chocolatey Package Manager](#1-install-chocolatey-package-manager)
