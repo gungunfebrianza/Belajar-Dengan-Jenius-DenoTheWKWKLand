@@ -1,8 +1,8 @@
-var n: number = 0;
+let n: number = 0;
 while (n < 3) {
   console.log(n++);
 }
 /* output :
-0
-1
-3 */
+  0
+  1
+  3 */
