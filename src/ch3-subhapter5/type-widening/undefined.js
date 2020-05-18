@@ -1,2 +1,2 @@
-  var ayunda;
-  console.log(ayunda); //undefined
+var ayunda;
+console.log(ayunda); //undefined
