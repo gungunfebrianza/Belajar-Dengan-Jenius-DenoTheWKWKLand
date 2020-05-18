@@ -1,9 +1,158 @@
-# Mastering Deno + PostgreSQL
+# Belajar Dengan Jenius Deno
 <img src="Cover.png" width=66%>
 
 ## Table of Contents
-
 - [Lets Destroy Node.js developer](#lets-destroy-nodejs-developer)
+- Chapter 1
+    - Belajar Open Web Platform
+    - Subchapter 1 - Apa itu Open Web Platform
+        - 1\. Technical Specification
+        - 2\. HTML 5.2
+            - Semantic Advantage
+            - Connectivity Advantage
+            - Storage Advantage
+            - Multimedia Advantage
+            - Performance Advantage
+            - Device Access Advantage
+            - Specification
+        - 3\. Web Assembly
+            - Safe
+            - Fast
+            - Portable Code
+            - Compact Code
+            - Specification
+        - 4\. EcmaScript
+            - Specification
+        - 5\. Web Socket
+            - Specification
+            - Application
+        - 6\. WebRTC
+            - Specification
+            - Application
+        - 7\. WebGL
+            - Specification
+            - Application
+    - Subchapter 2 - Apa itu Web Application?
+        - 1\. Server
+            - File Server
+            - Mail Server
+            - Proxy Server
+            - Application Server
+            - Database Server
+            - Messaging Server
+        - 2\. Virtual Private Server
+            - Virtualization
+            - Virtual Machine
+            - Hypervisor
+        - 3\. Web Server
+        - 4\. Web Page
+            - Static Web Page
+            - Dynamic Web Page
+            - Progressive Web Application (PWA)
+            - Single Page Application (SPA)
+        - 5\. Network
+            - Local Area Network (LAN)
+            - World Area Network (WAN)
+            - Internet Service Provide (ISP)
+        - 6\. Internet
+            - Internet Transit
+            - Satellite & Fiber Optic
+        - 7\. Internet Exchange Point
+        - 8\. Content Delivery Network (CDN)
+        - 9\. Cloud Computing
+            - Cloud Computing Execution Model
+            - Cloud Service Provider
+            - Scalability
+            - Load Balancer
+        - 10\. Serverless Computing
+            - FaaS Provider
+            - AWS Lambda
+    - Subchapter 3 - Bedah Konsep HTTP
+        - 1\. HTTP & URL
+            - HTTP
+            - Hypertext & Hyperlink
+            - Hypermedia
+            - World Wide Web (www)
+            - Uniform Resources Identifier (URI)
+            - URL / Web Resources
+        - 2\. HTTP & DNS
+            - IP Address
+            - DNS Resolver
+            - Root Server & TLD Server
+        - 3\. HTTP Transaction
+            - TCP Three-way Handshake
+        - 4\. HTTP Request
+            - HTTP Method
+            - Message
+            - HTTP Header
+            - Header Attribute
+            - MIME
+        - 5\. HTTP Response
+        - 6\. HTTP Status Message
+    - Subchapter 4 - Web Security
+        - 1\. Data in The Low Level
+            - Host
+            - Socket
+            - Bit
+            - Byte
+            - Bytes
+            - Character
+            - ASCII
+            - Data Transmission
+            - Base64 Encoding
+        - 2\. Cryptography
+            - Cryptoanalys
+            - Information Security
+            - Ciphertext
+            - Symmetric Cryptography
+            - Hash Function
+            - Message Authentication Codes (MAC)
+            - Assymetric Cryptography
+            - Cryptography Protocol
+        - 3\. Man In The Middle (MITM) Attack
+            - Eavesdropping
+        - 4\. HTTPS
+            - Perbedaan HTTP & HTTPS
+            - Manfaat HTTPS
+        - 5\. Secure Socket Layer (SSL)
+            - Transport Socket Layer (TLS)
+            - SSL Handshake
+- Chapter 2
+    - Setup Learning Environment
+    - Subchapter 1 - Visual Studio Code
+        - 1\. Install Programming Language Support
+        - 2\. Install Keybinding
+        - 3\. Install & Change Theme Editor
+        - 4\. The File Explorer
+        - 5\. Search Feature
+        - 6\. Source Control
+        - 7\. Debugger
+        - 8\. Extension
+            - Deno
+            - Auto Fold
+            - Better Comment
+            - Bookmarks
+            - Javascript (ES6) Code Snippets
+            - Path Intellisense
+            - VSCode Great Icons
+        - 9\. The Terminal
+            - Menambah Terminal Baru
+            - Melakukan Split Terminal
+            - Mengubah Posisi Terminal
+            - Menghapus Terminal
+        - 10\. Performance Optimization
+        - 11\. Zen Mode
+        - 12\. Display Multiple File
+        - 13\. Font Ligature
+    - Subchapter 2 - Web Browser
+        - 1\. Web Browser
+        - 2\. Web Console
+            - Autocomplete
+            - Syntax Highlighting
+            - Execution History
+        - 3\. Multiline Code Editor
+        
+- Chapter 3
 - [Installation](#installation)
     - [Install Deno For Windows](#install-deno-for-windows)
         1. [Install Chocolatey Package Manager](#1-install-chocolatey-package-manager)
