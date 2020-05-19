@@ -11,3 +11,7 @@ Maudy.shoot();
 
 const Gun = new Archer();
 Gun.shoot();
+
+/* output :
+  Total Arrow left : 19
+  Total Arrow left : 18 */

@@ -9,7 +9,7 @@ class Person1 {
   }
 }
 
-class Agent extends Person1 {
+class Agent1 extends Person1 {
   division = "";
   agentName = `Agent ${this.firstName}`;
 

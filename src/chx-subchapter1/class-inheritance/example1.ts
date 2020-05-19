@@ -1,4 +1,4 @@
-class Person {
+class Person2 {
   firstName = "";
   lastName = "";
   age = 0;
@@ -9,9 +9,9 @@ class Person {
   }
 }
 
-class Agent extends Person {
+class Agent2 extends Person2 {
   division = "";
 }
 
-const FBI = new Agent();
+const FBI = new Agent2();
 FBI.firstName = "Gun Gun Febrianza";

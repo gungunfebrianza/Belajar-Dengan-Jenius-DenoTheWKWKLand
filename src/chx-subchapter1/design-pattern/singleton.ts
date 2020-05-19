@@ -1,11 +1,11 @@
 class AppState {
-  counter = 0;
+  states = [];
   private static instanceRef: AppState;
-  private constructor() {
+  private constructor(data: string[]) {
   }
   static getInstance(): AppState {
     if (AppState.instanceRef == undefined) {
-      AppState.instanceRef = new AppState();
+      AppState.instanceRef = new AppState([]);
     }
     return AppState.instanceRef;
   }
@@ -15,11 +15,11 @@ class AppState {
 
 const appState1 = AppState.getInstance();
 const appState2 = AppState.getInstance();
-console.log("hello");
 
-appState1.counter++;
-appState1.counter++;
-appState2.counter++;
-appState2.counter++;
-console.log(appState1.counter);
-console.log(appState2.counter);
+appState1.states.push("hi");
+appState2.states.length;
+appState2.states.push("Maudy");
+appState2.states.length;
+
+console.log(appState1.states);
+console.log(appState2.states);
