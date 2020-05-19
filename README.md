@@ -465,6 +465,7 @@ deno run --allow-net Example.ts
 
 ## Other Examples :
 
+#### [Denovel](https://github.com/fauzan121002/denovel/) By Muhammad Fauzan @[fauzan121002](https://github.com/fauzan121002)
 #### [Deno Simple Framework](https://github.com/nauvalazhar/deno-simple-framework) by Muhamad Nauval Azhar @[nauvalazhar](https://github.com/nauvalazhar)
 
 ## Contributor
