@@ -4,11 +4,14 @@ class Person {
   age = 0;
   eyecolor = "";
 
-   getFullName(): string {
+  getFullName(): string {
     return `Fullname : ${this.firstName} ${this.lastName}`;
   }
 }
 
-  class Agent extends Person {
-    division = "";
-  }
+class Agent extends Person {
+  division = "";
+}
+
+  const FBI = new Agent;
+FBI.
