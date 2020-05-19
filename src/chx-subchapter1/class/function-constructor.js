@@ -1,4 +1,4 @@
-function person(firstname, lastname, age, eyecolor) {
+/* function person(firstname, lastname, age, eyecolor) {
   this.firstname = firstname;
   this.lastname = lastname;
   this.age = age;
@@ -8,3 +8,4 @@ function person(firstname, lastname, age, eyecolor) {
 person.prototype.getName = function() {
   return this.firstname + " " + this.lastname;
 };
+ */
