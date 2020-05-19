@@ -1,10 +1,10 @@
 class Person {
   firstName = "";
-  lastname = "";
+  lastName = "";
   age = 0;
   eyecolor = "";
 
   getName(): string {
-    return this.firstname + " " + lastname;
+    return this.firstName + " " + this.lastName;
   }
 }
