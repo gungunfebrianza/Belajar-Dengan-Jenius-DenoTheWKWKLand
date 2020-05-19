@@ -9,9 +9,9 @@ class Person {
   }
 }
 
-  const hooman = new Person();
-  hooman.firstName = "Maudy";
-  hooman.lastName = "Ayunda";
-  hooman.age = 25;
-  hooman.eyecolor = "Brown";
-  console.log(hooman.getFullName());
+const hooman = new Person();
+hooman.firstName = "Maudy";
+hooman.lastName = "Ayunda";
+hooman.age = 25;
+hooman.eyecolor = "Brown";
+console.log(hooman.getFullName());
