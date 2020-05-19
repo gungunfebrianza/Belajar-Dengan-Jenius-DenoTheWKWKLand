@@ -13,5 +13,5 @@ class Agent extends Person {
   division = "";
 }
 
-  const FBI = new Agent;
-FBI.
+const FBI = new Agent();
+FBI.firstName = "Gun Gun Febrianza";

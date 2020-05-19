@@ -11,6 +11,7 @@ class Person1 {
 
 class Agent extends Person1 {
   division = "";
+  agentName = `Agent ${this.firstName}`;
 
   sayHello(): void {
     this.getFullName();
