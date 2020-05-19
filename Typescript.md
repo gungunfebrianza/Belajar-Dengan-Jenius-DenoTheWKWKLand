@@ -18,13 +18,16 @@
         16. [Class & Static Member](#class--static-member)
         17. [Class Inheritance & Overriding](#class-inheritance--overriding)
         18. [Class & Generic](#class--generic)
-        19. [Class & Moditifier](#class--oditifier)
-        20. [Class & Readonly](class--readonly)
+        19. [Class & Moditifier](#class--moditifier)
+        20. [Class & Readonly](#class--readonly)
         21. [Modules](#modules)
         22. [Namespace](#namespace)
         23. [Assertion](#assertion)
         24. [Promise](#promise)
         25. [Collection](#collection)
+        26. [Destructuring](#destructuring)
+        27. [Immutable](#immutable)
+        28. [Type](#type)
 
 ## Typescript
 
@@ -147,7 +150,7 @@ function tulisNama(teman:any) {
 
 #### *Typed Array*
 
-Contoh sebuah ***collection***, di dalam ***typescript*** terdapat terdapat ***typed*** ***Array***.
+Contoh sebuah ***collection***, di dalam ***typescript*** menggunakan ***typed data*** ***Array***.
 
 ```typescript
 var list: number[] = [1, 2, 3];
@@ -155,7 +158,7 @@ var list: number[] = [1, 2, 3];
 
 #### ***Generic Array***
 
-Contoh sebuah ***collection***, di dalam ***typescript*** terdapat ***generic array***.
+Contoh sebuah ***collection***, di dalam ***typescript*** menggunakan ***generic array***.
 
 ```typescript
 var list: Array<number> = [1, 2, 3];
@@ -204,7 +207,7 @@ let nilai: number = Arah[1];
 
 **Function Return Void** adalah sebuah metode yang biasa digunakan untuk melanjutkan sebuah nilai yang telah ditentukan didalam **function** tersebut, tanpa perlu menggunakan **return statment**.
 
-Contoh sebuah ***function*** dengan ***return void***.
+Contoh sebuah ***function*** menggunakan ***return void***.
 
 ```typescript
 function beauty(): void {
@@ -219,20 +222,24 @@ menghasilkan ***return*** yang tidak memiliki nilai.
 
 **Function Generic** adalah sebuah metode yang biasa digunakan untuk menetukan sebuah type data menjadi type data dynamic, dimana type data dapat berubah- ubah sesuai dengan ketentuan type data yang diberikan.
 
-Contoh sebuah ***function*** dengan ***single dan multiple generic***.
+Contoh sebuah ***function*** menggunakan ***single generic***.
 
 ```typescript
 // single generic type data
 function person <T> (name: T, age: T) : void {
    console.log(`my name ${name} and age ${age}`);
 }
-person <string> ("john doe", "30");
+person <string> ("Maudy Ayunda", "28");
+```
 
+Contoh sebuah ***function*** menggunakan ***multiple generic***.
+
+```typescript
 // multiple generic type data
 function profile <T, U> (name: T, age: U) : void {
   console.log(`my name ${name} and age ${age}`);
 }
-profile <string, number> ("jane doe", 28);
+profile <string, number> ("Maudy Ayunda", 28);
 }
 ```
 
@@ -240,7 +247,7 @@ profile <string, number> ("jane doe", 28);
 
 **Function Constructor** adalah sebuah  metode yang dapat membuat **function** menjadi dapat di instansiasi layaknya sebuah kelas, ini biasa  disebut juga sebagai versi mini dari sebuah class.
 
-Contoh sebuah ***function*** dengan ***menggunakan  function constructor***.
+Contoh sebuah ***function*** menggunakan  **function constructor***.
 
 ```typescript
 function Deno(this: any, name: string, release: number, creator: string) {
@@ -254,7 +261,7 @@ console.log(resultI);
 ```
 **prototype**  adalah fungsi dimana kita bisa membuat sebuah object baru dari object yang sudah ada.
 
-Contoh sebuah ***function constructor*** dengan menggunakan ***prototype***
+Contoh sebuah ***function constructor*** menggunakan ***prototype***
 
 ```typescript
 function Deno(this: any, name: string, release: number, creator: string) {
@@ -291,7 +298,7 @@ Sebuah ***type string*** berada pada ***index*** ke 0 dan ***boolean*** ada pada
 
 **Lambada Function (Arrow Function)**  adalah sebuah metode dimana kita bisa membuat sebuah fungsi tersendiri, untuk masing - masing perintah yang telah kita tentukan, contoh yang paling umum adalah ketika kita ingin membuat sebuah fungsi custom dari masing - masing operasi pada `MySQL`
 
-Contoh **lambda** dan **type inference**.
+Contoh **lambda function** dan **type inference**.
 
 ```typescript
 var func1 = function(i: number): number { return i * i; }
@@ -322,7 +329,7 @@ var m: Manusia = { nama: "Maudy", makan: () => {} };
 var m: Manusia = { nama: "Maudy", umur: 22, makan: () => {} };
 ```
 
-Contoh ***Interface*** untuk sebuah ***function***.
+Contoh ***Interface*** menggunakan ***function***.
 
 ```typescript
 interface fungsiCari {
@@ -335,7 +342,7 @@ data = function(src: string, sub: string) {
 }
 ```
 
-Contoh ***Interface*** untuk sebuah ***array dan object***.
+Contoh ***Interface*** menggunakan ***type data array dan object***.
 
 ```typescript
 interface Arr {
@@ -356,10 +363,10 @@ const person: Obj = {
 }
 
 console.log(numb);
-console.log(person.name("john doe"));
+console.log(person.name("Maudy Ayunda"));
 ```
 
-Contoh ***Interface*** untuk sebuah ***class***.
+Contoh ***Interface*** menggunakan ***class***.
 
 ```typescript
 interface IPerson {
@@ -381,16 +388,16 @@ class Person implements IPerson {
    }
 }
 
-const result = new Person("john doe", 30, "coding");
+const result = new Person("Maudy Ayunda", 28, "Modeling");
 console.log(result);
 ```
 ### Class
 
-**Class** disebut juga sebagai `Blue Print` atau `Parent Class` dimana sebuah metode yang digunakan untuk menciptakan suatu instant dari object itu sendiri dan `**Class**` juga merupakan grup dari suatu object dengan kemiripan `Attributes` / `Properties`, method dan bisa berelasi ke object turunannya.
+**Class** disebut juga sebagai `Blue Print` atau `Parent Class` dimana sebuah metode yang digunakan untuk menciptakan suatu instant dari object itu sendiri dan **Class** juga merupakan grup dari suatu object dengan kemiripan `Attributes` / `Properties`, method dan bisa berelasi ke object turunannya.
 
 #### *Class & Properties*
 
-Contoh sebuah ***class*** dengan ***properties*** dan ***function***.
+Contoh sebuah ***class*** menggunakan ***properties*** dan ***function***.
 
 ```typescript
 class Math {
@@ -403,7 +410,7 @@ class Math {
 
 #### *Class* & *Constructor*
 
-Contoh sebuah ***class*** dengan ***constructor.***
+Contoh sebuah ***class*** menggunakan ***constructor.***
 
 ```typescript
 class Math {
@@ -416,7 +423,7 @@ class Math {
 
 #### *Class & Static* *Member*
 
-Contoh sebuah ***class*** dengan ***static member***.
+Contoh sebuah ***class*** menggunakan ***static member***.
 
 ```typescript
 class Math {
@@ -455,9 +462,9 @@ class koordinat3D extends Math {
 
 ```
 
-#### *Class  & Generic*
+#### *Class & Generic*
 
-Contoh ***class*** menggunakan ***generic type data***.
+Contoh sebuah ***class*** menggunakan ***type data generic***.
 
 ```typescript
 // single generic in class
@@ -469,7 +476,7 @@ class Person <T>  {
      this.age = age;
    }
 }
-const resultPerson = new Person<string>("john doe", "23");
+const resultPerson = new Person<string>("Maudy Ayunda", "28");
 console.log(resultPerson);
 
 // multiple single generic in class
@@ -481,13 +488,13 @@ class Profile <T, U>  {
      this.age = age;
    }
 }
-const resultProfile = new Profile<string, number>("john doe", 23);
+const resultProfile = new Profile<string, number>("Maudy Ayunda", 28);
 console.log(resultProfile);
 ```
 
-#### *Class  & Moditifier*
+#### *Class & Moditifier*
 
-Contoh ***class*** menggunakan ***moditifiter***.
+Contoh sebuah ***class*** menggunakan ***moditifiter***.
 
 ```typescript
 class Person {
@@ -509,7 +516,7 @@ console.log(result);
 
 #### *Class & Readonly*
 
-Contoh sebuah ***class*** dengan menggunakan ***readonly*** property.
+Contoh sebuah ***class*** menggunakan ***readonly*** property.
 
 ```typescript
 class Deno {
@@ -532,7 +539,7 @@ console.log(result);
 
 **Modules** adalah sebuah metode yang biasa digunakan untuk memberikan sebuah nama alias untuk sebuah module yang nantinya akan digunakan.
 
-Contoh sebuah ***Modules***.
+Contoh menggunakan ***Modules***.
 
 ```typescript
 module Geometry {
@@ -560,7 +567,7 @@ var s2 = new G.Kubus (10);
 
 **Namespace** adalah sebuah metode  yang digunakan untuk memberikan sebuah label atau mengelompokan sebuah fungsi tertentu untuk digunakan.
 
-Contoh sebuah ***Namespace***
+Contoh menggunakan ***Namespace***
 
 ```typescript
 namespace Framework {
@@ -590,7 +597,7 @@ console.log(node);
 
 **Assertion**  adalah sebuah metode dimana kita bisa melakukan perbandingan compare terhadap sebuah nilai yang telah tentukan.
 
-Contoh sebuah ***assertion*** dengan sebuah variabel.
+Contoh sebuah ***assertion*** menggunakan **Variabel**.
 
 ```typescript
 let code: any = 123;
@@ -602,7 +609,7 @@ console.log(typeof codeFirst)
 console.log(typeof codeSecond);
 ```
 
-Contoh sebuah ***assertion*** pada sebuah object.
+Contoh sebuah ***assertion*** pada sebuah object menggunakan **Interface**
 
 ```typescript
 // menggunakan interface
@@ -612,18 +619,22 @@ interface IPerson {
 }
 
 const person = <IPerson> {};
-person.name = "john doe";
-person.age = 30;
-console.log(person);
+person.name = "Maudy Ayunda";
+person.age = 28;
 
-// menggunakan type
+console.log(person);
+```
+
+Contoh sebuah ***assertion*** pada sebuah object menggunakan **Type**
+
+```typescript
 type IProfile  = {
   name: string,
   age: number
 }
 
 const profile = <IProfile> {};
-profile.name = "jane doe";
+profile.name = "Maudy Ayunda";
 profile.age = 28;
 
 console.log(profile);
@@ -633,28 +644,36 @@ console.log(profile);
 
 **Promise** adalah sebuah metode yang digunakan untuk menangani operasi `Asyncronus` dalam `Typescript`, mereka mudah digunakan ketika berhadapan dengan beberapa operasi `Asyncronus` dimana panggilan balik dapat membuat panggilan balik yang mengarah ke kode yang tidak dapat dieksekusi.
 
-Contoh sebuah ***promise*** untuk menangani sebuah operasi **asyncronus**
+Contoh sebuah ***promise*** menggunakan **Assertion**
 
 ```typescript
 // cara pertama
 const person = async function(): Promise<string> {
-    let name = "John Doe";
+    let name = "Maudy Ayunda";
     return name;
 }
 person().then(result => console.log(result));
+```
 
+Contoh sebuah ***promise*** menggunakan **Promise Constructor**
+
+```typescript
 // cara kedua
 function person ()  {
   return new Promise((resolve, reject) => {
-     let name = "john doe";
+     let name = "Maudy Ayunda";
      resolve(name);
   })
 }
 person().then(result => console.log(result));
+```
 
+Contoh sebuah ***promise*** menggunakan **Promise Resolve**
+
+```typescript
 // cara ketiga
 function person ()  {
-  let name = "john doe";
+  let name = "Maudy Ayunda";
   return Promise.resolve(name);
 }
 person().then(result => console.log(result));
@@ -664,16 +683,274 @@ person().then(result => console.log(result));
 
 **Collection** adalah sebuah metode yang digunakan untuk menangani sebuah operasi layaknya sebuah object dan array.
 
-Contoh sebuah ***collection*** pada typescript
+Contoh sebuah ***collection*** menggunakan **Map Constructor**
 
 ```typescript
-//  collection using MAP constructor
 const numb = new Map<string, number>([["satu", 1], ["dua", 2], ["tiga", 3]])
 console.log(numb);
+```
 
-// collection menggunakan SET constructor
+Contoh sebuah ***collection*** menggunakan **Set Constructor**
+
+```typescript
 const days = new Set <string> (["senin", "selasa", "rabu"]);
 console.log(days);
+```
+
+#### *Destructuring*
+
+**Destructuring** adalah sebuah metode yang digunakan untuk mengekstrak sebuah nilai dari property, tanpa perlu merujuk ke parent property tersebut.
+
+Contoh sebuah ***destructuring*** pada sebuah function menggunakan parameter **Array**
+
+```typescript
+let days: string[] = ["senin","selasa","rabu"];
+
+function Days([senin, selasa, rabu]: string[]) {
+   console.log(senin, selasa, rabu);
+}
+Days(days);
+```
+
+Contoh sebuah ***destructuring*** pada sebuah function menggunakan parameter **Object**
+
+```typescript
+interface IPerson {
+  name: string;
+  age: number;
+  hobby: string
+}
+
+let biodata = {
+  name: "Maudy Ayunda",
+  age: 28,
+  hobby: "Modeling"
+}
+
+function person ({name, age, hobby}: IPerson) {
+   console.log(`my name is ${name} and my age: ${age} and my ${hobby}`);
+}
+person(biodata);
+```
+
+Contoh sebuah ***destructuring*** pada sebuah function menggunakan parameter **Array Object**
+
+```typescript
+// function parameter destructuring menggunakan array
+interface IPerson {
+  name: string;
+  age: number;
+  hobby: string
+}
+
+let biodatas = [{
+  name: "Raisa Andriana",
+  age: 30,
+  hobby:"Singer"
+},
+{
+  name: "Maudy Ayunda",
+  age: 28,
+  hobby:"Modeling"
+}
+];
+
+function person([{name, age, hobby}]: IPerson[]) {
+  console.log(`my name is ${name} and my age: ${age} and my ${hobby}`);
+}
+person(biodatas);
+```
+
+Contoh sebuah ***destructuring*** menggunakan **Array**
+
+```typescript
+const numb: string[] = ["senin", "selasa", "rabu"];
+const [senin, selasa, rabu] = numb;
+console.log(`${senin} - ${selasa} - ${rabu}`);
+```
+
+Contoh sebuah ***destructuring*** menggunakan **Object**
+
+```typescript
+interface IPerson {
+  name: string;
+  age: number;
+}
+
+const person:IPerson = {
+   name: "Maudy Ayunda",
+   age: 28
+}
+
+const {name, age} = person;
+console.log(`my name is : ${name} and my age is: ${age}`);
+```
+
+Contoh sebuah ***destructuring*** menggunakan **Array Object**
+
+```typescript
+interface IPerson {
+  name: string;
+  age: number;
+}
+
+const person: IPerson[] = [
+  {
+   name: "Maudy Ayunda",
+   age: 28
+  },
+  {
+    name: "Raisha Adriana",
+    age: 30
+  }
+];
+
+const [{name, age}]: IPerson[] = person;
+console.log(`my name is : ${name} and my age is: ${age}`);
+```
+
+#### *Immutable*
+
+**Immutable** adalah sebuah metode yang digunakan untuk menambahkan sebuah nilai baru, tanpa perlu merubah nilai aslinya.
+
+Contoh sebuah ***immutable*** menggunakan **Concat** pada sebuah **Array**
+
+```typescript
+const firstNumb: number[] = [1,2,3,4,5];
+const secodNumb: number[] = [6,7,8,9,10];
+const result = firstNumb.concat(secodNumb);
+```
+
+Contoh sebuah ***immutable*** menggunakan  **Spread Operator** pada sebuah **Array**
+
+```typescript
+const firstNumb: number[] = [1,2,3,4,5];
+const secodNumb: number[] = [6,7,8,9,10];
+const result = [...firstNumb, ...secodNumb];
+console.log(result);
+```
+
+Contoh sebuah ***immutable*** menggunakan **Object.defineProperty** pada sebuah **Object.**
+
+```typescript
+const Person = {
+   name: "Maudy Ayunda",
+   age: 28
+}
+
+Object.defineProperty(Person, "hobby", {
+     value: "Modeling",
+     writable: true,
+     enumerable: true
+});
+console.log(Person);
+```
+
+Contoh sebuah ***immutable*** menggunakan  **Object.defineProperties** pada sebuah **Object.**
+
+```typescript
+const Person = {
+   name: "Maudy Ayunda",
+   age: 28
+}
+
+Object.defineProperties(Person, {
+      city: {
+        value: "Bandung",
+        writable: true,
+        enumerable: true
+      },
+      state: {
+        value: "Jawa Barat",
+        writable: true,
+        enumerable: true
+      },
+      country: {
+        value: "Indonesia",
+        writable: true,
+        enumerable: true
+      }
+});
+console.log(Person);
+```
+
+#### *Type*
+
+**Type** biasa digunakan untuk mendefinisikan sebuah property pada sebuah object, dimana sebuah object  yang di berikan sebuah type, maka harus mengikuti ketentuan yang berlaku pada type tersebut, type sangatlah mirip degan interface perbedaan spesifik antara **Type** dan **Interface** adalah type tidak bisa digunakan secara bersamaan dengan class dan inteface dapat digunakan secara bersamaan dengan class.
+
+Contoh sebuah ***type*** menggunakan **Function**
+
+```typescript
+type fungsiCari = {
+	(source: string, subString: string): boolean;
+}
+
+var data: fungsiCari;
+data = function(src: string, sub: string) {
+	return src.search(sub) !== -1;
+}
+console.log(data);
+```
+
+Contoh sebuah ***type*** menggunakan  **type data Array dan Object**
+
+```typescript
+type Arr = {
+  [index: number] : number,
+}
+
+type Obj = {
+  name: (name: string) => string
+}
+
+
+const numb: Arr = [1,2,3,4,5];
+
+const person: Obj = {
+   name: function(name: string) {
+     return name;
+   }
+}
+
+console.log(numb);
+console.log(person.name("Maudy Ayunda"));
+```
+
+Contoh sebuah ***type*** pada sebuah **Object**
+
+```typescript
+type TPerson = {
+  name: string;
+  age: number;
+}
+
+const person: TPerson = {
+  name: "Maudy Ayunda",
+  age: 28
+}
+
+console.log(person);
+```
+
+Contoh sebuah ***type*** pada sebuah **Array Object**
+
+```typescript
+type TPerson = {
+  name: string;
+  age: number;
+};
+
+const person: TPerson[] = [
+  {
+    name: "Maudy Ayunda",
+    age: 28
+  },
+  {
+    name: "Raisa Adriana",
+    age: 30
+  }
+];
+console.log(person);
 ```
 
 <p align="right">
