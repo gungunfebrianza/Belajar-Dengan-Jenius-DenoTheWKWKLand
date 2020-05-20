@@ -1,4 +1,4 @@
-const user = Symbol("IDuser");
+const userIdentity = Symbol("IDuser");
 
 const client = {
   userIdentity: "888",
