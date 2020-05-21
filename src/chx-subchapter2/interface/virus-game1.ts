@@ -4,17 +4,17 @@ interface Malware {
   infectStartup(): void;
 }
 
-  interface Trojan {
-    IDTrojan: string;
-    keylogger(): void;
-    screenlogger(): void;
-  }
+interface Trojan {
+  IDTrojan: string;
+  keylogger(): void;
+  screenlogger(): void;
+}
 
-  interface Ransomware extends Malware, Trojan {
-    RansomwareVersion: string;
-    encryptAllFiles(): void;
-    extortion(): void;
-  }
+interface Ransomware extends Malware {
+  RansomwareVersion: string;
+  encryptAllFiles(): void;
+  extortion(): void;
+}
 
 class Virus implements Malware {
   public IDMalware: string;
@@ -37,7 +37,10 @@ exampleVirus1.getOSInformation();
 exampleVirus1.infectStartup();
 exampleVirus1.getIDMalware();
 
-class WannaCry implements Ransomware {
+class Test {
+}
+
+class WannaCry extends Ransomware {
   public RansomwareVersion: string;
   public IDMalware: string;
   getOSInformation(): void {
@@ -54,6 +57,6 @@ class WannaCry implements Ransomware {
   }
 }
 
-  const exampleVirus3: WannaCry = new WannaCry();
-  exampleVirus3.encryptAllFiles()
-  exampleVirus3.extortion()
+const exampleVirus3: WannaCry = new WannaCry();
+exampleVirus3.encryptAllFiles();
+exampleVirus3.extortion();
