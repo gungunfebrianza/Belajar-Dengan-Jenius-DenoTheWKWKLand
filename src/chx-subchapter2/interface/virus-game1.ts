@@ -2,17 +2,6 @@ interface Malware {
   IDMalware: string;
   getOSInformation(): void;
   infectStartup(): void;
-  infect(): void;
-}
-
-interface Trojan {
-  keylogger(): void;
-  screenlogger(): void;
-}
-
-interface Ransomware {
-  encrypt(): void;
-  extortion(): void;
 }
 
 class Virus implements Malware {
@@ -26,8 +15,4 @@ class Virus implements Malware {
   infectStartup() {
     console.log();
   }
-  infect() {
-  }
 }
-
-const vir1 = new Virus("1");
