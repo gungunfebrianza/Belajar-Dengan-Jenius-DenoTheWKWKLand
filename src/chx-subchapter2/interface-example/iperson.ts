@@ -2,11 +2,7 @@ interface IPerson {
   firstName: string;
   greet(): void;
 }
-
-class Test implements IPerson{
-
-}
-class Person implements Test {
+class Person implements IPerson {
   firstName: string;
   constructor(inFirstName: string) {
     this.firstName = inFirstName;
