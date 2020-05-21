@@ -12,7 +12,7 @@ interface Trojan {
 
 interface Ransomware extends Malware {
   RansomwareVersion: string;
-  encrypt(): void;
+  encryptAllFiles(): void;
   extortion(): void;
 }
 
@@ -46,7 +46,7 @@ class WannaCry implements Ransomware {
   infectStartup(): void {
     console.log("Startup OS Infected");
   }
-  encrypt(): void {
+  encryptAllFiles(): void {
     console.log("Encrypt All Files, Success");
   }
   extortion(): void {
@@ -54,4 +54,6 @@ class WannaCry implements Ransomware {
   }
 }
 
-const exampleVirus3: WannaCry = new WannaCry();
+  const exampleVirus3: WannaCry = new WannaCry();
+  exampleVirus3.encryptAllFiles()
+  exampleVirus3.extortion()
