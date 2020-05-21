@@ -4,17 +4,17 @@ interface Malware {
   infectStartup(): void;
 }
 
-interface Trojan {
-  IDTrojan: string;
-  keylogger(): void;
-  screenlogger(): void;
-}
+  interface Trojan {
+    IDTrojan: string;
+    keylogger(): void;
+    screenlogger(): void;
+  }
 
-interface Ransomware extends Malware {
-  RansomwareVersion: string;
-  encryptAllFiles(): void;
-  extortion(): void;
-}
+  interface Ransomware extends Malware, Trojan {
+    RansomwareVersion: string;
+    encryptAllFiles(): void;
+    extortion(): void;
+  }
 
 class Virus implements Malware {
   public IDMalware: string;
