@@ -5,3 +5,6 @@ if (isExcuted1) {
 } else {
   console.log("isExecuted1 not executed!");
 }
+
+  var yes = true; 
+  var no = false;
