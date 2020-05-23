@@ -1,20 +1,20 @@
 {
   "compilerOptions": {
-
     "target": "es5",
-    "module": "es2015",                     
-    "strict": true,                           
-    "noImplicitAny": true,                 
-    "strictNullChecks": true,       
-    // "strictFunctionTypes": true,           
+    "module": "commonjs",
+    "strict": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    // "strictFunctionTypes": true,
     /* Enable strict checking of function types. */
-    // "strictBindCallApply": true,           
+    // "strictBindCallApply": true,
     /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
-    // "strictPropertyInitialization": true,  
+    // "strictPropertyInitialization": true,
     /* Enable strict checking of property initialization in classes. */
-    // "noImplicitThis": true,                
+    // "noImplicitThis": true,
     /* Raise error on 'this' expressions with an implied 'any' type. */
-    // "alwaysStrict": true,                  
+    // "alwaysStrict": true,
     /* Parse in strict mode and emit "use strict" for each source file. */
 
     /* Additional Checks */
@@ -31,14 +31,14 @@
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
     // "types": [],                           /* Type declaration files to be included in compilation. */
     // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
-    "esModuleInterop": true,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
     // "allowUmdGlobalAccess": true,          /* Allow accessing UMD globals from modules. */
 
     /* Advanced Options */
-    "skipLibCheck": true,                     
+    "skipLibCheck": true,
     /* Skip type checking of declaration files. */
-    "forceConsistentCasingInFileNames": true  
+    "forceConsistentCasingInFileNames": true
     /* Disallow inconsistently-cased references to the same file. */
   }
 }

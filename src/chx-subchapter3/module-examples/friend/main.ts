@@ -1,3 +1,3 @@
 import { Developer } from "./friend";
 var dev = new Developer("Nikolai");
-dev.knowsTypeScript = true;
+console.log(dev.firstName);
