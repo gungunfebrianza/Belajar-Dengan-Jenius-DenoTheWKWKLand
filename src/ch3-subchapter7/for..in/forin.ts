@@ -1,7 +1,15 @@
-let arr: string[] = ["Hi", "Maudy", "Ayunda", "<3"];
+  let arr: number[] = [10, 20, 30, 40];
 
-for (let index of arr) {
-  console.log(index);
-  console.log(arr[index]);
-}
-// output : 1, 2, 3, 4
+  for (let index in arr) {
+    console.log(index); // prints indexes: 0, 1, 2, 3
+    console.log(arr[index]); // prints elements: 10, 20, 30, 40
+  }
+  /* 
+  0
+  10
+  1
+  20
+  2
+  30
+  3
+  40 */
