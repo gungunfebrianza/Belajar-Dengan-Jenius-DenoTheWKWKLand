@@ -1,4 +1,4 @@
-function getAverage(a: number, b: number, c?: number): string {
+function GetAverage(a: number, b: number, c?: number): string {
   let total = a + b;
   let counter = 1;
   counter++;
@@ -10,5 +10,5 @@ function getAverage(a: number, b: number, c?: number): string {
   return "The average is " + average;
 }
 // 'The average is 5'
-const result = getAverage(2, 6);
+const result = GetAverage(2, 6);
 console.log(result);
