@@ -13,3 +13,13 @@ export enum Contributor {
 export function readBook(): void {
   console.log(`${bookTitle} karya ${bookDetail.author}`);
 }
+
+export class Wallet {
+  constructor(public name: string, public balance: number) {
+    this.name = name;
+    this.balance = balance;
+  }
+  topUp(newbalance: number) {
+    return (this.balance += newbalance);
+  }
+}
