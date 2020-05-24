@@ -9,7 +9,7 @@ let sum = 0.1 + 0.2;
 console.log(sum.toFixed(2));
 //0.3
 
-console.log(typeof sum.toFixed(2));
+console.log(typeof +sum.toFixed(2));
 //"number"
 
 console.log(typeof sum.toFixed(2));
