@@ -3,4 +3,4 @@ var [satu, dua] = mod;
 console.log(satu);
 console.log(dua);
 /* Maudy
-Ayunda */
+  Ayunda */
