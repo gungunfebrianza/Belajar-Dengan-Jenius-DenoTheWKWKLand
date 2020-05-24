@@ -1,6 +1,7 @@
 function reverseList<T>(list: T[]): T[] {
   const reversedList: T[] = [];
-  for (let i = (list.length - 1); i >= 0; i--) {
+  let i = (list.length - 1);
+  for (i; i >= 0; i--) {
     reversedList.push(list[i]);
   }
   return reversedList;
@@ -8,7 +9,7 @@ function reverseList<T>(list: T[]): T[] {
 
 const letters = ["a", "b", "c", "d"];
 const reversedLetters = reverseList<string>(letters);
-console.log(letters);
+console.log(reversedLetters);
 
 /* 
   d
@@ -18,7 +19,7 @@ console.log(letters);
   */
 const numbers = [1, 2, 3, 4];
 const reversedNumbers = reverseList<number>(numbers);
-console.log(numbers);
+console.log(reversedNumbers);
 /* 
   4
   3
