@@ -1,2 +1,2 @@
-var mod = ["Maudy","Ayunda","Faza"]
-mod
+const mod4 = ["Maudy", "Ayunda", "Faza"];
+console.log(mod4);

@@ -1,2 +1,2 @@
-var mod = new Array("Maudy", "Ayunda", "Faza")
-mod
+const mod2: string[] = ["Maudy", "Ayunda", "Faza"];
+console.log(mod2);

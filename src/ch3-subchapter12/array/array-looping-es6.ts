@@ -1,5 +1,5 @@
-var mod: string[] = ["Maudy", "Ayunda", "Faza"];
-mod.forEach(function (item: string, index: number) {
+const mod5: string[] = ["Maudy", "Ayunda", "Faza"];
+mod5.forEach(function (item: string, index: number) {
   console.log(item, index);
 });
 /* 

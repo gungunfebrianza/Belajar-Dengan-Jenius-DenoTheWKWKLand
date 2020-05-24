@@ -1,7 +1,7 @@
-var mod: string[] = ["Maudy", "Ayunda", "Faza"];
+const mod6: string[] = ["Maudy", "Ayunda", "Faza"];
 var i: number = 0;
-for (i; i < mod.length; i++) {
-  console.log(i + " " + mod[i]);
+for (i; i < mod6.length; i++) {
+  console.log(i + " " + mod6[i]);
 }
 /* 
         0 Maudy

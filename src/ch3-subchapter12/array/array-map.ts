@@ -1,7 +1,7 @@
-var mod: string[] = ["Maudy", "Ayunda", "Faza"];
-var gun = mod.map(function (item) {
+const mod7: string[] = ["Maudy", "Ayunda", "Faza"];
+const gun = mod7.map(function (item) {
   return item.toUpperCase();
 });
 
-console.log(gun);
+console.log(mod7);
 // [ "MAUDY", "AYUNDA", "FAZA" ]

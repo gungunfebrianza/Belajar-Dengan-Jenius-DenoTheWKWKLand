@@ -1,5 +1,5 @@
-var soul: string[] = ["Maudy", "Ayunda Faza", "Gun Gun", "Febrianza"];
-var x = soul.entries();
+const soul: string[] = ["Maudy", "Ayunda Faza", "Gun Gun", "Febrianza"];
+const x = soul.entries();
 var n: [number, string];
 for (n of x) {
   console.log(n = n);
