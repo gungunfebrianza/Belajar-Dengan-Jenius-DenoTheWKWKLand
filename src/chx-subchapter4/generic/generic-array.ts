@@ -10,9 +10,3 @@ arrayNumber.push(1000);
 arrayNumber.push(2000);
 //array.push("Hello");//error
 
-function displayItem<T>(item: T): T {
-  console.log(item);
-  return item;
-}
-displayItem(2);
-displayItem(true);
