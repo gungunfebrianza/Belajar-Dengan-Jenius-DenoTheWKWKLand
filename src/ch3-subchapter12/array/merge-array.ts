@@ -1,4 +1,6 @@
-var mod = ["Maudy", "Ayunda Faza"]
-var gun = ["Gun Gun", "Febrianza"]
-var together = mod.concat(gun)
-together
+const mod: string[] = ["Maudy", "Ayunda Faza"];
+const gun: string[] = ["Gun Gun", "Febrianza"];
+const together: string[] = mod.concat(gun);
+console.log(together);
+// [ "Maudy", "Ayunda Faza", "Gun Gun", "Febrianza" ]
+
