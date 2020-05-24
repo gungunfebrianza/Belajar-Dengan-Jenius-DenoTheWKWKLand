@@ -1,2 +1,3 @@
-mod
-mod.indexOf("Ayunda")
+const mod10: string[] = ["Maudy", "Ayunda", "Faza"];
+console.log(mod10.indexOf("Ayunda"));
+//1
