@@ -1,5 +1,7 @@
-var mod = new Array("Maudy", "Ayunda", "Faza")
+var mod: string[] = ["Maudy", "Ayunda", "Faza"];
 var gun = mod.map(function (item) {
-    return item.toUpperCase();
-})
-gun
+  return item.toUpperCase();
+});
+
+console.log(gun);
+// [ "MAUDY", "AYUNDA", "FAZA" ]
