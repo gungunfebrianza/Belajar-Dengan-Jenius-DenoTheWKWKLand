@@ -1,3 +1,3 @@
-  function displayFullName(FullName: string): string {
-    return `Hello ${FullName}`;
-  }
+function displayFullName(FullName: string): string {
+  return `Hello ${FullName}`;
+}
