@@ -3,10 +3,12 @@ function displayItem<T>(item: T): T {
   return item;
 }
 displayItem("Hello Maudy");
-displayItem(2);
+displayItem([2]);
 displayItem(true);
 /* 
   Hello Maudy
   2
   true 
   */
+  displayItem([2, 3, 4]);
+  // [ 2, 3, 4 ]
