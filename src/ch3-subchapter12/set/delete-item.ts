@@ -8,8 +8,4 @@ console.log(exampleMap3.set(true, "Faza"));
 
 exampleMap3.delete(true);
 console.log(exampleMap3);
-/* 
-  Maudy
-  Ayunda
-  Faza 
-  */
+//Map { "1" => "Maudy", 1 => "Ayunda" }
