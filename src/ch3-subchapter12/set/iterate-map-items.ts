@@ -1,13 +1,13 @@
-const exampleMap7 = new Map();
-exampleMap7.set("1", "Maudy");
-exampleMap7.set(1, "Ayunda");
-exampleMap7.set(true, "Faza");
+const exampleMap8 = new Map();
+exampleMap8.set("1", "Maudy");
+exampleMap8.set(1, "Ayunda");
+exampleMap8.set(true, "Faza");
 
-for (const v of exampleMap7.values()) {
-  console.log(v);
-}
-/* 
-  Maudy
-  Ayunda
-  Faza
+  for (const [k,v] of exampleMap8.entries()) {
+    console.log(k,v);
+  }
+  /* 
+  1 Maudy
+  1 Ayunda
+  true Faza
   */
