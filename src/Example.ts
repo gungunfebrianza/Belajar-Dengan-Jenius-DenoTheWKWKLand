@@ -3,4 +3,4 @@ for await (const req of serve({ port: 8000 })) {
   req.respond({ body: "Hello World\n" });
 }
 
-  let isCute: boolean = true; 
+let isCute: boolean = true;
