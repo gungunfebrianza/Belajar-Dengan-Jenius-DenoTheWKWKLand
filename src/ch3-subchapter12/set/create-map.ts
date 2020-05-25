@@ -1,1 +1,1 @@
-  let exampleMap = new Map();
+const exampleMap1 = new Map();
