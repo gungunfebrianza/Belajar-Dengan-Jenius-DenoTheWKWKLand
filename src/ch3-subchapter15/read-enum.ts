@@ -1,8 +1,8 @@
-enum AppStatus1 {
+enum AppStatus2 {
   ACTIVE = "ACTIVE",
   INACTIVE = "INACTIVE",
   ONHOLD = "ONHOLD",
 }
 
-console.log(AppStatus1);
+console.log(AppStatus2);
 // { ACTIVE: "ACTIVE", INACTIVE: "INACTIVE", ONHOLD: "ONHOLD" }
