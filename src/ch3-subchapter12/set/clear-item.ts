@@ -1,5 +1,5 @@
 var s = new Set();
 s.add("Maudy");
 s.add("Ayunda");
-console.log(s.size);
-//2
+console.log(s.clear());
+//undefined
