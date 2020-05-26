@@ -1,4 +1,4 @@
-import { readBook, bookDetail, publication } from "./mod";
+import { readBook, bookDetail, publication } from "./mod.ts";
 readBook();
 // Belajar Dengan Jenius Typescript karya Gun Gun Febrianza
 console.log(bookDetail);
