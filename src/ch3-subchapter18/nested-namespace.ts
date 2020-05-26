@@ -1,7 +1,7 @@
-namespace ComputerScience {
-  namespace DataStructure {
-   namespace Array {
-     
-   } 
+  namespace ComputerScience {
+    namespace DataStructure {
+    namespace Array {
+      
+    } 
+    }
   }
-}
