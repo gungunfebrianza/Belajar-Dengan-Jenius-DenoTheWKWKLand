@@ -1,2 +1,3 @@
 var listUser: [number, string];
-listUser = [1, "Maudy"];
+listUser[0] = 1;
+listUser[1] = "Maudy";

@@ -6,7 +6,7 @@ console.log(listUsers[0]);
 console.log(listUsers[1]);
 console.log(listUsers[2]);
 /* 
-888
-Ayunda
-[ "Artist", "Singer" ] 
-*/
+  888
+  Ayunda
+  [ "Artist", "Singer" ] 
+  */
