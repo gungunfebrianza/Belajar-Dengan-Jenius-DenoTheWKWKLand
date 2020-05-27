@@ -330,6 +330,43 @@
         - 7\. Continue Statement
         - 8\. Labeled Statement
     - Subchapter 8 - Function
+        - 1\. Apa itu Function?
+            - Function Declaration
+            - Function Expression
+        - 2\. First-class Function
+            - What is Excecution Context (EC)?
+        - 3\. Simple Function
+            - Typescript Version
+        - 4\. Function Parameter
+            - Parameter Type
+            - Optional Parameter
+            - Default Parameter
+            - Rest Parameter
+        - 5\. Function Return
+        - 6\. Function For Function Parameter
+        - 7\. Function & Outer Variable
+        - 8\. Function & Outer Variable
+        - 9\. Callback Function
+        - 10\. Arrow Function
+        - 11\. Multiline Arrow Function
+        - 12\. Anonymous Function
+        - 13\. Function Constructor
+        - 14\. Function As Expression
+        - 15\. Nested Function
+        - 16\. Argument Object
+        - 17\. This Keyword
+            - Implicit Binding
+        - 18\. Call & Apply Function
+            - Explicit Binding
+            - Call
+            - Apply
+        - 19\. IIFE
+        - 20\. Clean Code Function
+            - Always Declare Local Variable
+            - Use Named Function Expression
+            - Use Default Parameter
+            - Function is not statement
+    - Subchapter 9 - Error Handling
     
     
     
