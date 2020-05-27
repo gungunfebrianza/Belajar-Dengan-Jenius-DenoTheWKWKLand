@@ -382,6 +382,31 @@
             - Finally
         - 5\. Custom Error
     - Subchapter 10 - Object
+        - 1\. Apa itu Fundamental Objects?
+        - 2\. Custom Object
+            - Object Initializer
+            - Ibject Property
+            - Object Method
+            - Object Constructor
+            - Function Constructor
+            - Object Prototype
+            - Getter & Setter
+            - Object Destructure
+        - 3\. Custom Object Property
+            - Add Object Property
+            - Access Object Property
+            - Delete Object Property
+            - Check Object Properry
+        - 4\. Custom Object Method
+            - Access Object Method
+            - Add Object Method
+        - 5\. Custom Object Looping
+        - 6\. JSON
+            - JSON & Object Literal
+            - Stringify
+            - Parse JSON
+            - Parse Date in JSON
+    - Subchapter 11 - Classes
     
     
     
