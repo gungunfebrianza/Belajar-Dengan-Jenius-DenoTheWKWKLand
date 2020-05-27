@@ -1,35 +1,40 @@
-var ComputerScience;
-(function (ComputerScience) {
-    ComputerScience.course = "Computer Science";
-})(ComputerScience || (ComputerScience = {}));
-///<reference path = "IComputerScience.ts" />
-var ComputerScience;
-(function (ComputerScience) {
-    var StackDataStructure = /** @class */ (function () {
-        function StackDataStructure(s) {
+var DataStructure;
+(function (DataStructure) {
+    DataStructure.library = "Data Structure Library";
+})(DataStructure || (DataStructure = {}));
+///<reference path = "LibDataStructure.ts" />
+var DataStructure;
+(function (DataStructure) {
+    var Stack = /** @class */ (function () {
+        function Stack(s) {
             if (s === void 0) { s = [""]; }
             this._stack = s;
         }
-        StackDataStructure.prototype.pushMethod = function (input) {
+        Stack.prototype.push = function (input) {
             this._stack.push(input);
         };
-        StackDataStructure.prototype.popMethod = function () {
+        Stack.prototype.pop = function () {
             this._stack.pop();
         };
-        StackDataStructure.prototype.peekMethod = function () {
-            return this._stack[this._stack.length - 1];
+        Stack.prototype.isEmpty = function () {
+            return this._stack.length == 0;
         };
-        return StackDataStructure;
+        Stack.prototype.peek = function () {
+            return !this.isEmpty()
+                ? this._stack[this._stack.length - 1]
+                : "Empty Stack";
+        };
+        return Stack;
     }());
-    ComputerScience.StackDataStructure = StackDataStructure;
-})(ComputerScience || (ComputerScience = {}));
-///<reference path = "IComputerScience.ts" />
-///<reference path = "OComputerScience.ts" />
-var stack = new ComputerScience.StackDataStructure(["Maudy", "Ayunda"]);
-console.log(stack.peekMethod());
-stack.pushMethod("Gun Gun");
-console.log(stack);
+    DataStructure.Stack = Stack;
+})(DataStructure || (DataStructure = {}));
+///<reference path = "LibDataStructure.ts" />
+///<reference path = "ClassDataStructure.ts" />
+var ObjStack = new DataStructure.Stack(["Maudy", "Ayunda"]);
+console.log(ObjStack.peek());
+ObjStack.push("Gun Gun");
+console.log(ObjStack);
 // StackDataStructure { _stack: [ "Maudy", "Ayunda", "Gun Gun" ] }
-stack.popMethod();
-console.log(stack);
+ObjStack.pop();
+console.log(ObjStack);
 //StackDataStructure { _stack: [ "Maudy", "Ayunda" ] }

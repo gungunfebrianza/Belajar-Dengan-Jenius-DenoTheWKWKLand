@@ -2,9 +2,10 @@
 ///<reference path = "ClassDataStructure.ts" />
 const ObjStack = new DataStructure.Stack(["Maudy", "Ayunda"]);
 console.log(ObjStack.peek());
-stack.push("Gun Gun");
+ObjStack.push("Gun Gun");
 console.log(ObjStack);
 // StackDataStructure { _stack: [ "Maudy", "Ayunda", "Gun Gun" ] }
-stack.pop();
+ObjStack.pop();
 console.log(ObjStack);
 //StackDataStructure { _stack: [ "Maudy", "Ayunda" ] }
+//Ayunda
