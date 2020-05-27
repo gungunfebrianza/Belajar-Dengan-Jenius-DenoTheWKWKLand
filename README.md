@@ -546,10 +546,29 @@
         - 1\. Callback
         - 2\. Promise
         - 3\. Async Await
+- Chapter 6
+    - Big Data
+    - Subchapter 1 - Introduction to Database
+        - 1\. Database Function 
+            - Data Management
+            - Scalability
+            - Data Heterogenity
+            - Efficiency
+            - Persistence
+            - Reliabilty
+            - Consistency
+            - Non-redundancy
+        - 2\. Use Case Database
+            - Aplikasi Penjualan (Sales)
+            - Aplikasi Accounting
+            - Aplikasi HR (Human Resource)
+            - Aplikasi Manufaktur
+            - Aplikasi e-Banking
+            - Aplikasi Keuangan
+        - 3\. Data Analytic
+- Daftar Pustaka
+- Tentang Penulis
 
-    
-    
-    
     
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
