@@ -367,6 +367,21 @@
             - Use Default Parameter
             - Function is not statement
     - Subchapter 9 - Error Handling
+        - 1\. Syntax Error
+            - Missing Syntax
+            - Invalid Syntax
+        - 2\. Logical Error
+        - 3\. Runtime Error
+            - Reference Error
+            - Range Error
+            - Type Error
+            - Syntax Error
+        - 4\. Try & Catch
+            - Error Object Properties
+            - Stact Trace
+            - Finally
+        - 5\. Custom Error
+    - Subchapter 10 - Object
     
     
     
