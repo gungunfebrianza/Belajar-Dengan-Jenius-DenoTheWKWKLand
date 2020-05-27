@@ -407,6 +407,29 @@
             - Parse JSON
             - Parse Date in JSON
     - Subchapter 11 - Classes
+        - 1\. Class-based language
+            - Function Constructor
+            - Class ECMAScript2015
+            - Class Typescript
+        - 2\. Class Inheritance
+        - 3\. Class Access Modifier
+            - Public 
+            - Private 
+            - Protected
+            - Public Behaviour
+            - Protected Behaviour
+            - Private Behaviour
+            - Readonly Property
+        - 4\. Class Constructor
+            - Spread Argument
+        - 5\. Static Keyword
+        - 6\. Super Method
+        - 7\. Method Override
+        - 8\. Accessor Getter & Setter
+        - 9\. Abstract Class
+        - 10\. Class Declaration
+    - Subchapter 12 - Interface
+            
     
     
     
