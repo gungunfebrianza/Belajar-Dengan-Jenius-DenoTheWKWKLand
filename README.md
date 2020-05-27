@@ -461,7 +461,13 @@
             - Map
             - Set
     - Subchapter 14 - Tupless
-        
+        - Create Tuple
+        - Tuple Property & Method
+        - Application
+    - Subchapter 15 - Enum
+        - 1\. Create Enum
+        - 2\. Access Enum
+    - Subchapter 16 - Generic
             
     
     
