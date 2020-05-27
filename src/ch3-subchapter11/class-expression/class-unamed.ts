@@ -5,5 +5,4 @@ let mywallet1 = class Wallet {
   }
 };
 
-mywallet1 = Wa
 console.log(typeof mywallet1); //function
