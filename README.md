@@ -207,7 +207,46 @@
             - Module node
             - Module ws
         - 6\. Deno Third-party Modules
-    Subchapter 3 - Introduction to Typescript
+    - Subchapter 3 - Introduction to Typescript
+        - 1\. Javascript
+        - 2\. Node.js
+        - 3\. Typescript
+            - Compilation
+            - Static Typing
+            - Typescript Compiler
+            - Compile Typescript
+            - Typescript Compiler Options
+            - Typescript Playground
+    - Subchapter 4 - Fundamental Deno
+        - 1\. Hello World
+        - 2\. Comment
+        - 3\. Variable Declaration
+            - Variable
+            - Binding
+            - Reserver World
+            - Naming Convention
+            - Case Sensitivity
+            - Loosely Typed Language
+            - Typescript Static Typing
+            - Var Keyword
+            - Let Keyword
+            - Constant Keyword
+        - 4\. Expression & Operator
+            - Statement
+            - Expression
+            - Operator & Operand
+            - Operator Precedence
+            - Arithmatic Operation
+            - Comparison Operator
+            - Logical Operator
+            - Assignment Operator
+        - 5\. Javascript Strict Mode
+            - Legacy Code
+        - 6\. Automatic Add Semicolon
+        - 7\. Clean Code Variable Declaration
+            - Avoid Global Variable
+            - Declaration on Top
+    - Subchapter 5 - Deno Data Types
     
     
     
