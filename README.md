@@ -429,6 +429,24 @@
         - 9\. Abstract Class
         - 10\. Class Declaration
     - Subchapter 12 - Interface
+        - 1\. Design Interface
+            - Create Malware Interface
+            - Implement Malware Interface
+            - Class Type & Interface Type
+            - Create Ransomware Interface
+            - Implement Ransomware Interface
+            - Interface Extend Multi-Interface
+            - Create Trojan Interface
+            - Implement Multi-interface
+        - 2\. Interface & Class
+            - Interface Extends Interface
+            - Interface Extends Class
+            - Interface Cant Implement Interface
+            - Interface Implements Class
+            - Class Cant Extends Interface
+            - Class Implements Class
+    - Subchapter 13 - Collection
+        
             
     
     
