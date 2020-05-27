@@ -151,43 +151,49 @@
             - Syntax Highlighting
             - Execution History
         - 3\. Multiline Code Editor
-        
 - Chapter 3
-- [Installation](#installation)
-    - [Install Deno For Windows](#install-deno-for-windows)
-        1. [Install Chocolatey Package Manager](#1-install-chocolatey-package-manager)
-        1. [Install Deno Via Package Manager](#2-install-deno-via-package-manager)
-        1. [Check Deno](#3-check-deno)
-    - [Install Deno For Linux](#install-deno-for-linux)
-        1. [Install Deno via Curl](#1-install-deno-via-curl)
-        1. [Install Deno via Package Manager](#2-install-deno-via-package-manager)
-    - [Install Deno For MacOS](#install-deno-for-macos)
-- [Deno 101](#deno-101)
-    - [REPL Mode Execution](#repl-mode-execution)
-    - [Script Execution](#script-execution)
-    - [Eval Mode](#eval-mode)
-    - [Deno Command](#deno-command)
-        1. [Deno Options](#1-deno-options)
-        1. [Deno Sub Command](#2-deno-sub-command)
-        1. [Deno Command Structure](#3-deno-command-structure)
-        1. [Run Javascript & Typescript Files](#run-javascript--typescript-files)
-- [Typescript](./Typescript.md)
-    - [Typescript Quick Introduction](./Typescript.md#typescript-cheatsheet)
-        1. [Data Types](./Typescript.md#type-inference)
-        1. [Union](./Typescript.md#union)
-        1. [Type Inference](./Typescript.md#type-inference)
-        1. [Typed Array](./Typescript.md#type-inference)
-        1. [Generic Array](./Typescript.md#generic-array)
-        1. [Enumeration](./Typescript.md#enumeration)
-        1. [Void Type](./Typescript.md#function-return-void)
-        1. [Tuples](./Typescript.md#tuples)
-        1. [Lambda](./Typescript.md#lambda)
-        1. [Interface](./Typescript.md#interface)
-        1. [Class & Properties](./Typescript.md#class--properties)
-        1. [Class & Constructor](./Typescript.md#class--constructor)
-        1. [Class & Static Member](./Typescript.md#class--static-member)
-        1. [Class Inheritance & Overriding](./Typescript.md#class-inheritance--overriding)
-        1. [Modules](./Typescript.md#modules)
+    - Mastering Deno
+    - Subchapter 1 - Install Deno
+        - 1\. [Installation](#installation)
+            - [Deno For Windows](#install-deno-for-windows)
+            - [Install Deno For Linux](#install-deno-for-linux)
+            - [Install Deno For MacOS](#install-deno-for-macos)
+            - [Check Deno](#3-check-deno)
+    - Subchapter 2 - Introduction to Deno
+        - 1\. Deno Runtime
+            - Typescript
+            - Package Manager
+            - Browser Object Support
+            - Built-in Tooling
+            - Sandbox
+        - 2\. Deno Infrastructure
+            - Deno Front-end
+            - Deno Middle-end
+            - Deno Back-end
+        - 3\. Deno Program
+            - [REPL Mode Execution](#repl-mode-execution)
+            - [Script Execution](#script-execution)
+            - [Eval Mode](#eval-mode)
+        - 4\. [Deno Command](#deno-command)
+            - [Deno Options](#1-deno-options)
+            - [Deno Sub Command](#2-deno-sub-command)
+            - [Deno Command Structure](#3-deno-command-structure)
+            - [Run Javascript & Typescript Files](#run-javascript--typescript-files)
+            - Deno Permissions
+            - Deno Reload Module
+            - Deno Upgrade Command
+        - 5\. Deno Standard Module
+            - Module fs
+            - Module http
+            - Module datetime
+            - Module node
+            - Module ws
+        - 6\. Deno Third-party Modules
+    Subchapter 3 - Introduction to Typescript
+    
+    
+    
+    
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
 
