@@ -521,7 +521,28 @@
             - Allocation Example
             - Garbage Collector
             - Mark-and-Sweep Algorithm
-    
+    - Subchapter 3 - Node.js Application
+        - 4\. Running Javascript File
+        - 5\. Node RPL
+        - 1\. Package Manager
+        - 2\. Node Package Manager
+            - NPM commands
+        - 3\. Node Package Registry
+        - 4\. Create Node.js Package
+            - package.json
+            - Directive
+            - Search Package
+            - Install Package
+            - Remove Package
+            - View Package
+            - Publish Package
+            - Create Package
+        - 5\. Publish Node.js Package
+        - 10\. Node.js Application
+    - Subchapter 4 - Debugging Node.js
+        - 1\. Debug on Visual Studio Code
+        - 2\. Built-in Node.js Debugger
+    - Subchapter 5 - Asynchronous
             
     
     
