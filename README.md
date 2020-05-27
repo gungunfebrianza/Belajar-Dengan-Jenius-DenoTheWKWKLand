@@ -2,7 +2,25 @@
 <img src="Cover.png" width=66%>
 
 ## Table of Contents
-- [Lets Destroy Node.js developer](#lets-destroy-nodejs-developer)
+- Open Library Indonesia
+- Metode Belajar
+    - Learning Problems & Abstraction Control
+- Matthew Effect in Reading
+- Persiapan
+    - Apa saja yang harus dipersiapkan?
+        - Install Node.js
+        - Install Visual Studio Code
+        - Install Python
+        - Install Google Chrome atau Firefox
+        - Install Git
+        - Install Postman
+    - Konvensi Penulisan?
+    - Feedback?
+    - Kode Sumber?
+    - Penggunaan Kode?
+    - Terdapat Kesalahan?
+    - https://github.com/gungunfebrianza/Belajar-Dengan-Jenius-DenoTheWKWKLand
+    - Pertanyaan, Kritik dan Saran?
 - Chapter 1
     - Belajar Open Web Platform
     - Subchapter 1 - Apa itu Open Web Platform
