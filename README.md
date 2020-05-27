@@ -468,6 +468,17 @@
         - 1\. Create Enum
         - 2\. Access Enum
     - Subchapter 16 - Generic
+        - 1\. Generic Function
+            - Type Union Way
+            - Generic Type
+        - 2\. Reverse Array Element
+            - Create Generic Function
+            - Create Parameter For Generic Function
+            - Create Return For Generic Function
+            - Create Internal Array Data Structure
+            - Create Internal Algorithm
+            - Create Return Inside Generic Function
+    
             
     
     
