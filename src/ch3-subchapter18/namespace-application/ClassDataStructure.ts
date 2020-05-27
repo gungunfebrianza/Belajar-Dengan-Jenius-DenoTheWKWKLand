@@ -21,23 +21,21 @@ namespace DataStructure {
     }
   }
   export class Queue implements QueueDataStructure {
-    private _stack: string[];
+    private _queue: string[];
     constructor(s: string[] = [""]) {
-      this._stack = s;
+      this._queue = s;
     }
     enqueue(input: string): void {
-      this._stack.push(input);
+      this._queue.push(input);
     }
     dequeue(): void {
-      this._stack.pop();
+      this._queue.shift();
     }
     isEmpty(): boolean {
-      return this._stack.length == 0;
+      return this._queue.length == 0;
     }
     peek(): string {
-      return !this.isEmpty()
-        ? this._stack[this._stack.length - 1]
-        : "Empty Stack";
+      return !this.isEmpty() ? this._queue[0] : "Empty Queue";
     }
   }
 }
