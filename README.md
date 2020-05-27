@@ -314,7 +314,22 @@
         - 13\. Custom Type
         - 14\. Clean Code Data Types
             - Declare Primitive Not Object
-    Subchapter 6 - Control Flow
+    - Subchapter 6 - Control Flow
+        - 1\. Block Statements
+        - 2\. Conditional Statemnets
+        - 3\. Ternary Operator
+        - 4\. Multiconditional Statement
+        - 5\. Switch Style
+    - Subchapter 7 - Loop & Iteration
+        - 1\. While Statement
+        - 2\. Do ... While Statement
+        - 3\. For Statement
+        - 4\. For ... Of
+        - 5\. For ... in
+        - 6\. Break Statement
+        - 7\. Continue Statement
+        - 8\. Labeled Statement
+    - Subchapter 8 - Function
     
     
     
