@@ -247,6 +247,74 @@
             - Avoid Global Variable
             - Declaration on Top
     - Subchapter 5 - Deno Data Types
+        - 1\. Javascript Data Types
+            - Apa itu Data?
+            - Apa itu Types?
+            - Apa itu Generic Variable?
+            - Javascript Data Types
+            - Apa itu Pointer?
+            - Apa itu Stack & Heap?
+            - Primitive Types
+            - Apa itu Primitive & Reference Values?
+            - Reference Types
+            - Primitive as Object via Object Wrapper
+        - 2\. Typescript Data Type
+            - Typescript Type Annotation
+            - Declare Explicit
+            - Declare Implicit
+        - 3\. String Data Types
+            - String Type
+            - Template String
+            - Escaping
+            - String Concatenation
+            - String Interpolation
+            - String Obejct
+            - String Property
+            - String Methods
+        - 4\. Number Data Types
+            - Number Type
+            - Infinity
+            - NaN
+            - Number Object
+            - Number Property
+            - Number Methods
+            - Number Accuration
+            - Imprecise Calculation
+            - Solution to Imprecise
+            - Fixed Number
+            - Numeric Conversion
+            - Math Object
+            - Hexadecimal, Binary dan Octadecimal
+        - 5\. Booleans Data Types
+            - Boolean Type
+        - 6\. Inferred Type
+            - Dynamic Typed
+            - Static Typed
+        - 7\. Type Conversion
+            - String To Number
+            - String To Decimal Number
+            - Number to String
+            - Decimal Number to String
+            - Boolean to String
+            - Check Data Type
+        - 8\. Any Type
+            - Parameter Any Type
+            - Option nalmplicitAny
+        - 9\. Type Union
+            - Parameter Union Type
+        - 10\. Symbol Type
+        - 11\. Type Widening
+            - Undefined
+            - Null
+            - Option strictNullCheck
+        - 12\. BigInt Data Types
+            - Arbitary Precision
+            - Arithmetic Operation
+            - Comparison
+        - 13\. Custom Type
+        - 14\. Clean Code Data Types
+            - Declare Primitive Not Object
+    Subchapter 6 - Control Flow
     
     
     
