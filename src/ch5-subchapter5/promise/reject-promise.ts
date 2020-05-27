@@ -4,7 +4,7 @@ var objpromise = new Promise(function (resolve, reject) {
   }, 1000);
 });
 
-promise.then(
+objpromise.then(
   (result) => console.log(result),
   (error) => console.log(error)
 );
