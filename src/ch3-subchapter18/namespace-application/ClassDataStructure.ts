@@ -5,15 +5,20 @@ namespace DataStructure {
     constructor(s: string[] = [""]) {
       this._stack = s;
     }
-    pushMethod(input: string): void {
+    push(input: string): void {
       this._stack.push(input);
     }
 
-    popMethod(): void {
+    pop(): void {
       this._stack.pop();
     }
-    peekMethod(): string {
-      return this._stack[this._stack.length - 1];
+    isEmpty(): boolean {
+      return this._stack.length == 0;
+    }
+    peek(): string {
+      return !this.isEmpty()
+        ? this._stack[this._stack.length - 1]
+        : "Empty Stack";
     }
   }
 }
