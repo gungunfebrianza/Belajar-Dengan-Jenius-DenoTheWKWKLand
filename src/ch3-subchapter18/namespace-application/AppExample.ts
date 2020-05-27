@@ -1,10 +1,10 @@
 ///<reference path = "LibDataStructure.ts" />
 ///<reference path = "ClassDataStructure.ts" />
-const stack = new DataStructure.Stack(["Maudy", "Ayunda"]);
-console.log(stack.peek());
+const ObjStack = new DataStructure.Stack(["Maudy", "Ayunda"]);
+console.log(ObjStack.peek());
 stack.push("Gun Gun");
-console.log(stack);
+console.log(ObjStack);
 // StackDataStructure { _stack: [ "Maudy", "Ayunda", "Gun Gun" ] }
 stack.pop();
-console.log(stack);
+console.log(ObjStack);
 //StackDataStructure { _stack: [ "Maudy", "Ayunda" ] }

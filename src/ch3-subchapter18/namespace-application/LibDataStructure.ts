@@ -4,12 +4,12 @@ namespace DataStructure {
     push(input: string): void;
     pop(): void;
     peek(): void;
-    isEmpty():boolean;
+    isEmpty(): boolean;
   }
   export interface QueueDataStructure {
     enqueue(input: string): void;
     dequeue(): void;
     peek(): void;
-    isEmpty():boolean;
+    isEmpty(): boolean;
   }
 }
