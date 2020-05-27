@@ -498,6 +498,30 @@
             - Export Visualization
             - Import Module
     - Subchapter 18 - Namespace
+- Chapter 5
+    - Mastering Node.js
+    - Subchapter 1 - Re-Introducing Javascript
+    - Subchapter 2 - V8 Javascript Engine
+        - 1\. The Call Stack
+            - Synchronous Program
+            - Asynchronous Program
+            - Event Loops
+            - Blocking
+            - Non-blocking
+        - 2\. Javascript Compilation Pipeline
+            - Interpreter & Compiler
+            - Machine Code
+            - Ignition & Turbofan
+            - Intermediate Representation (IR)
+            - Bytecode
+            - Just-in-Time Compilation
+            - Compiler Development Philosophy
+        - 3\. Memory Management
+            - Memory Lifecycle
+            - Allocation Example
+            - Garbage Collector
+            - Mark-and-Sweep Algorithm
+    
             
     
     
