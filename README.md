@@ -543,7 +543,10 @@
         - 1\. Debug on Visual Studio Code
         - 2\. Built-in Node.js Debugger
     - Subchapter 5 - Asynchronous
-            
+        - 1\. Callback
+        - 2\. Promise
+        - 3\. Async Await
+
     
     
     
