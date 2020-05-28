@@ -498,6 +498,12 @@
             - Export Visualization
             - Import Module
     - Subchapter 18 - Namespace
+- Chapter 4
+    - Deno Standard Module
+    - Subchapter 1 - Filesystem Programming
+    - Subchapter 2 - Testing
+    - Subchapter 3 - HTTP Server
+    - Subchapter 4 - Web Socket
 - Chapter 5
     - Mastering Node.js
     - Subchapter 1 - Re-Introducing Javascript
