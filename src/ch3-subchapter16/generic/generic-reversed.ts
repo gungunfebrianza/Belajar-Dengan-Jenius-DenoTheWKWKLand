@@ -1,6 +1,6 @@
 function reverseList<T>(list: T[]): T[] {
   const reversedList: T[] = [];
-  let i = (list.length - 1);
+  let i = list.length - 1;
   for (i; i >= 0; i--) {
     reversedList.push(list[i]);
   }
