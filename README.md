@@ -700,7 +700,7 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 
 <p align="right">
-    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+    <b><a href="#belajar-dengan-jenius-deno">↥ back to top</a></b>
 </p>
 
 ---
@@ -842,7 +842,7 @@ deno run --allow-net Example.ts
 ```
 
 <p align="right">
-    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+    <b><a href="#belajar-dengan-jenius-deno">↥ back to top</a></b>
 </p>
 
 ## Other Examples :
@@ -853,7 +853,6 @@ deno run --allow-net Example.ts
 ## Contributor
 
 + [Arifin Izz](https://github.com/arifinizzah)
-+ [Bramaudi](https://github.com/bramaudi)
 
 Feel free guys to make contribution for the community <3 just pull request.
 
@@ -862,5 +861,5 @@ Feel free guys to make contribution for the community <3 just pull request.
 <img src="Assets/SponsorMarketkoin.png" width=20%>
 
 <p align="right">
-    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+    <b><a href="#belajar-dengan-jenius-deno">↥ back to top</a></b>
 </p>
