@@ -16,3 +16,5 @@ fetch("https://api.kawalcorona.com/indonesia/")
     dirawat: "16,321"
   } 
   */
+
+  const result = await fetch("https://deno.land/");
