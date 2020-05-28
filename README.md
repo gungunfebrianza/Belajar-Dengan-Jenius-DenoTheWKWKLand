@@ -2,7 +2,25 @@
 <img src="Cover.png" width=66%>
 
 ## Table of Contents
-- [Lets Destroy Node.js developer](#lets-destroy-nodejs-developer)
+- Open Library Indonesia
+- Metode Belajar
+    - Learning Problems & Abstraction Control
+- Matthew Effect in Reading
+- Persiapan
+    - Apa saja yang harus dipersiapkan?
+        - Install Node.js
+        - Install Visual Studio Code
+        - Install Python
+        - Install Google Chrome atau Firefox
+        - Install Git
+        - Install Postman
+    - Konvensi Penulisan?
+    - Feedback?
+    - Kode Sumber?
+    - Penggunaan Kode?
+    - Terdapat Kesalahan?
+    - https://github.com/gungunfebrianza/Belajar-Dengan-Jenius-DenoTheWKWKLand
+    - Pertanyaan, Kritik dan Saran?
 - Chapter 1
     - Belajar Open Web Platform
     - Subchapter 1 - Apa itu Open Web Platform
@@ -151,43 +169,413 @@
             - Syntax Highlighting
             - Execution History
         - 3\. Multiline Code Editor
-        
 - Chapter 3
-- [Installation](#installation)
-    - [Install Deno For Windows](#install-deno-for-windows)
-        1. [Install Chocolatey Package Manager](#1-install-chocolatey-package-manager)
-        1. [Install Deno Via Package Manager](#2-install-deno-via-package-manager)
-        1. [Check Deno](#3-check-deno)
-    - [Install Deno For Linux](#install-deno-for-linux)
-        1. [Install Deno via Curl](#1-install-deno-via-curl)
-        1. [Install Deno via Package Manager](#2-install-deno-via-package-manager)
-    - [Install Deno For MacOS](#install-deno-for-macos)
-- [Deno 101](#deno-101)
-    - [REPL Mode Execution](#repl-mode-execution)
-    - [Script Execution](#script-execution)
-    - [Eval Mode](#eval-mode)
-    - [Deno Command](#deno-command)
-        1. [Deno Options](#1-deno-options)
-        1. [Deno Sub Command](#2-deno-sub-command)
-        1. [Deno Command Structure](#3-deno-command-structure)
-        1. [Run Javascript & Typescript Files](#run-javascript--typescript-files)
-- [Typescript](./Typescript.md)
-    - [Typescript Quick Introduction](./Typescript.md#typescript-cheatsheet)
-        1. [Data Types](./Typescript.md#type-inference)
-        1. [Union](./Typescript.md#union)
-        1. [Type Inference](./Typescript.md#type-inference)
-        1. [Typed Array](./Typescript.md#type-inference)
-        1. [Generic Array](./Typescript.md#generic-array)
-        1. [Enumeration](./Typescript.md#enumeration)
-        1. [Void Type](./Typescript.md#function-return-void)
-        1. [Tuples](./Typescript.md#tuples)
-        1. [Lambda](./Typescript.md#lambda)
-        1. [Interface](./Typescript.md#interface)
-        1. [Class & Properties](./Typescript.md#class--properties)
-        1. [Class & Constructor](./Typescript.md#class--constructor)
-        1. [Class & Static Member](./Typescript.md#class--static-member)
-        1. [Class Inheritance & Overriding](./Typescript.md#class-inheritance--overriding)
-        1. [Modules](./Typescript.md#modules)
+    - Mastering Deno
+    - Subchapter 1 - Install Deno
+        - 1\. [Installation](#installation)
+            - [Deno For Windows](#install-deno-for-windows)
+            - [Install Deno For Linux](#install-deno-for-linux)
+            - [Install Deno For MacOS](#install-deno-for-macos)
+            - [Check Deno](#3-check-deno)
+    - Subchapter 2 - Introduction to Deno
+        - 1\. Deno Runtime
+            - Typescript
+            - Package Manager
+            - Browser Object Support
+            - Built-in Tooling
+            - Sandbox
+        - 2\. Deno Infrastructure
+            - Deno Front-end
+            - Deno Middle-end
+            - Deno Back-end
+        - 3\. Deno Program
+            - [REPL Mode Execution](#repl-mode-execution)
+            - [Script Execution](#script-execution)
+            - [Eval Mode](#eval-mode)
+        - 4\. [Deno Command](#deno-command)
+            - [Deno Options](#1-deno-options)
+            - [Deno Sub Command](#2-deno-sub-command)
+            - [Deno Command Structure](#3-deno-command-structure)
+            - [Run Javascript & Typescript Files](#run-javascript--typescript-files)
+            - Deno Permissions
+            - Deno Reload Module
+            - Deno Upgrade Command
+        - 5\. Deno Standard Module
+            - Module fs
+            - Module http
+            - Module datetime
+            - Module node
+            - Module ws
+        - 6\. Deno Third-party Modules
+    - Subchapter 3 - Introduction to Typescript
+        - 1\. Javascript
+        - 2\. Node.js
+        - 3\. Typescript
+            - Compilation
+            - Static Typing
+            - Typescript Compiler
+            - Compile Typescript
+            - Typescript Compiler Options
+            - Typescript Playground
+    - Subchapter 4 - Fundamental Deno
+        - 1\. Hello World
+        - 2\. Comment
+        - 3\. Variable Declaration
+            - Variable
+            - Binding
+            - Reserver World
+            - Naming Convention
+            - Case Sensitivity
+            - Loosely Typed Language
+            - Typescript Static Typing
+            - Var Keyword
+            - Let Keyword
+            - Constant Keyword
+        - 4\. Expression & Operator
+            - Statement
+            - Expression
+            - Operator & Operand
+            - Operator Precedence
+            - Arithmatic Operation
+            - Comparison Operator
+            - Logical Operator
+            - Assignment Operator
+        - 5\. Javascript Strict Mode
+            - Legacy Code
+        - 6\. Automatic Add Semicolon
+        - 7\. Clean Code Variable Declaration
+            - Avoid Global Variable
+            - Declaration on Top
+    - Subchapter 5 - Deno Data Types
+        - 1\. Javascript Data Types
+            - Apa itu Data?
+            - Apa itu Types?
+            - Apa itu Generic Variable?
+            - Javascript Data Types
+            - Apa itu Pointer?
+            - Apa itu Stack & Heap?
+            - Primitive Types
+            - Apa itu Primitive & Reference Values?
+            - Reference Types
+            - Primitive as Object via Object Wrapper
+        - 2\. Typescript Data Type
+            - Typescript Type Annotation
+            - Declare Explicit
+            - Declare Implicit
+        - 3\. String Data Types
+            - String Type
+            - Template String
+            - Escaping
+            - String Concatenation
+            - String Interpolation
+            - String Obejct
+            - String Property
+            - String Methods
+        - 4\. Number Data Types
+            - Number Type
+            - Infinity
+            - NaN
+            - Number Object
+            - Number Property
+            - Number Methods
+            - Number Accuration
+            - Imprecise Calculation
+            - Solution to Imprecise
+            - Fixed Number
+            - Numeric Conversion
+            - Math Object
+            - Hexadecimal, Binary dan Octadecimal
+        - 5\. Booleans Data Types
+            - Boolean Type
+        - 6\. Inferred Type
+            - Dynamic Typed
+            - Static Typed
+        - 7\. Type Conversion
+            - String To Number
+            - String To Decimal Number
+            - Number to String
+            - Decimal Number to String
+            - Boolean to String
+            - Check Data Type
+        - 8\. Any Type
+            - Parameter Any Type
+            - Option nalmplicitAny
+        - 9\. Type Union
+            - Parameter Union Type
+        - 10\. Symbol Type
+        - 11\. Type Widening
+            - Undefined
+            - Null
+            - Option strictNullCheck
+        - 12\. BigInt Data Types
+            - Arbitary Precision
+            - Arithmetic Operation
+            - Comparison
+        - 13\. Custom Type
+        - 14\. Clean Code Data Types
+            - Declare Primitive Not Object
+    - Subchapter 6 - Control Flow
+        - 1\. Block Statements
+        - 2\. Conditional Statemnets
+        - 3\. Ternary Operator
+        - 4\. Multiconditional Statement
+        - 5\. Switch Style
+    - Subchapter 7 - Loop & Iteration
+        - 1\. While Statement
+        - 2\. Do ... While Statement
+        - 3\. For Statement
+        - 4\. For ... Of
+        - 5\. For ... in
+        - 6\. Break Statement
+        - 7\. Continue Statement
+        - 8\. Labeled Statement
+    - Subchapter 8 - Function
+        - 1\. Apa itu Function?
+            - Function Declaration
+            - Function Expression
+        - 2\. First-class Function
+            - What is Excecution Context (EC)?
+        - 3\. Simple Function
+            - Typescript Version
+        - 4\. Function Parameter
+            - Parameter Type
+            - Optional Parameter
+            - Default Parameter
+            - Rest Parameter
+        - 5\. Function Return
+        - 6\. Function For Function Parameter
+        - 7\. Function & Outer Variable
+        - 8\. Function & Outer Variable
+        - 9\. Callback Function
+        - 10\. Arrow Function
+        - 11\. Multiline Arrow Function
+        - 12\. Anonymous Function
+        - 13\. Function Constructor
+        - 14\. Function As Expression
+        - 15\. Nested Function
+        - 16\. Argument Object
+        - 17\. This Keyword
+            - Implicit Binding
+        - 18\. Call & Apply Function
+            - Explicit Binding
+            - Call
+            - Apply
+        - 19\. IIFE
+        - 20\. Clean Code Function
+            - Always Declare Local Variable
+            - Use Named Function Expression
+            - Use Default Parameter
+            - Function is not statement
+    - Subchapter 9 - Error Handling
+        - 1\. Syntax Error
+            - Missing Syntax
+            - Invalid Syntax
+        - 2\. Logical Error
+        - 3\. Runtime Error
+            - Reference Error
+            - Range Error
+            - Type Error
+            - Syntax Error
+        - 4\. Try & Catch
+            - Error Object Properties
+            - Stact Trace
+            - Finally
+        - 5\. Custom Error
+    - Subchapter 10 - Object
+        - 1\. Apa itu Fundamental Objects?
+        - 2\. Custom Object
+            - Object Initializer
+            - Ibject Property
+            - Object Method
+            - Object Constructor
+            - Function Constructor
+            - Object Prototype
+            - Getter & Setter
+            - Object Destructure
+        - 3\. Custom Object Property
+            - Add Object Property
+            - Access Object Property
+            - Delete Object Property
+            - Check Object Properry
+        - 4\. Custom Object Method
+            - Access Object Method
+            - Add Object Method
+        - 5\. Custom Object Looping
+        - 6\. JSON
+            - JSON & Object Literal
+            - Stringify
+            - Parse JSON
+            - Parse Date in JSON
+    - Subchapter 11 - Classes
+        - 1\. Class-based language
+            - Function Constructor
+            - Class ECMAScript2015
+            - Class Typescript
+        - 2\. Class Inheritance
+        - 3\. Class Access Modifier
+            - Public 
+            - Private 
+            - Protected
+            - Public Behaviour
+            - Protected Behaviour
+            - Private Behaviour
+            - Readonly Property
+        - 4\. Class Constructor
+            - Spread Argument
+        - 5\. Static Keyword
+        - 6\. Super Method
+        - 7\. Method Override
+        - 8\. Accessor Getter & Setter
+        - 9\. Abstract Class
+        - 10\. Class Declaration
+    - Subchapter 12 - Interface
+        - 1\. Design Interface
+            - Create Malware Interface
+            - Implement Malware Interface
+            - Class Type & Interface Type
+            - Create Ransomware Interface
+            - Implement Ransomware Interface
+            - Interface Extend Multi-Interface
+            - Create Trojan Interface
+            - Implement Multi-interface
+        - 2\. Interface & Class
+            - Interface Extends Interface
+            - Interface Extends Class
+            - Interface Cant Implement Interface
+            - Interface Implements Class
+            - Class Cant Extends Interface
+            - Class Implements Class
+    - Subchapter 13 - Collection
+        - 1\. Apa itu Collection?
+            - Iterable
+            - Keyed
+            - Destructurable
+        - 2\. Apa itu Indexed Collections?
+            - Array
+            - Create Array
+            - Array Property & Method
+        - Array Properties
+            - Multidimensional Array
+            - Matrix
+        - 3\. Keyed Collections
+            - Map
+            - Set
+    - Subchapter 14 - Tupless
+        - Create Tuple
+        - Tuple Property & Method
+        - Application
+    - Subchapter 15 - Enum
+        - 1\. Create Enum
+        - 2\. Access Enum
+    - Subchapter 16 - Generic
+        - 1\. Generic Function
+            - Type Union Way
+            - Generic Type
+        - 2\. Reverse Array Element
+            - Create Generic Function
+            - Create Parameter For Generic Function
+            - Create Return For Generic Function
+            - Create Internal Array Data Structure
+            - Create Internal Algorithm
+            - Create Return Inside Generic Function
+    - Subchapter 17 - Module
+        - 1\. Module Concept
+            - Module
+            - Module Format
+            - Module Loaders
+            - Module Bundlers
+        - 2\. Node.js Module
+            - Create & Export Module
+            - Use Module
+            - Export Multiple Method & Value
+            - Export Style
+            - Destructure Assignment
+            - Export Class
+        - 3\. Deno Module
+            - Create & Export Module
+            - Use Module
+            - Compile to Javascript
+            - Export Visualization
+            - Import Module
+    - Subchapter 18 - Namespace
+- Chapter 4
+    - Deno Standard Module
+    - Subchapter 1 - Filesystem Programming
+    - Subchapter 2 - Testing
+    - Subchapter 3 - HTTP Server
+    - Subchapter 4 - Web Socket
+- Chapter 5
+    - Mastering Node.js
+    - Subchapter 1 - Re-Introducing Javascript
+    - Subchapter 2 - V8 Javascript Engine
+        - 1\. The Call Stack
+            - Synchronous Program
+            - Asynchronous Program
+            - Event Loops
+            - Blocking
+            - Non-blocking
+        - 2\. Javascript Compilation Pipeline
+            - Interpreter & Compiler
+            - Machine Code
+            - Ignition & Turbofan
+            - Intermediate Representation (IR)
+            - Bytecode
+            - Just-in-Time Compilation
+            - Compiler Development Philosophy
+        - 3\. Memory Management
+            - Memory Lifecycle
+            - Allocation Example
+            - Garbage Collector
+            - Mark-and-Sweep Algorithm
+    - Subchapter 3 - Node.js Application
+        - 1\. Running Javascript File
+        - 2\. Node RPL
+        - 3\. Package Manager
+        - 4\. Node Package Manager
+            - NPM commands
+        - 5\. Node Package Registry
+        - 6\. Create Node.js Package
+            - package.json
+            - Directive
+            - Search Package
+            - Install Package
+            - Remove Package
+            - View Package
+            - Publish Package
+            - Create Package
+        - 7\. Publish Node.js Package
+        - 8\. Node.js Application
+    - Subchapter 4 - Debugging Node.js
+        - 1\. Debug on Visual Studio Code
+        - 2\. Built-in Node.js Debugger
+    - Subchapter 5 - Asynchronous
+        - 1\. Callback
+        - 2\. Promise
+        - 3\. Async Await
+- Chapter 6
+    - Big Data
+    - Subchapter 1 - Introduction to Database
+        - 1\. Database Function 
+            - Data Management
+            - Scalability
+            - Data Heterogenity
+            - Efficiency
+            - Persistence
+            - Reliabilty
+            - Consistency
+            - Non-redundancy
+        - 2\. Use Case Database
+            - Aplikasi Penjualan (Sales)
+            - Aplikasi Accounting
+            - Aplikasi HR (Human Resource)
+            - Aplikasi Manufaktur
+            - Aplikasi e-Banking
+            - Aplikasi Keuangan
+        - 3\. Data Analytic
+- Daftar Pustaka
+- Tentang Penulis
+
+    
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
 
@@ -318,7 +706,7 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 
 
 <p align="right">
-    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+    <b><a href="#belajar-dengan-jenius-deno">↥ back to top</a></b>
 </p>
 
 ---
@@ -460,7 +848,7 @@ deno run --allow-net Example.ts
 ```
 
 <p align="right">
-    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+    <b><a href="#belajar-dengan-jenius-deno">↥ back to top</a></b>
 </p>
 
 ## Other Examples :
@@ -471,7 +859,6 @@ deno run --allow-net Example.ts
 ## Contributor
 
 + [Arifin Izz](https://github.com/arifinizzah)
-+ [Bramaudi](https://github.com/bramaudi)
 
 Feel free guys to make contribution for the community <3 just pull request.
 
@@ -480,5 +867,5 @@ Feel free guys to make contribution for the community <3 just pull request.
 <img src="Assets/SponsorMarketkoin.png" width=20%>
 
 <p align="right">
-    <b><a href="#mastering-deno--postgresql">↥ back to top</a></b>
+    <b><a href="#belajar-dengan-jenius-deno">↥ back to top</a></b>
 </p>
