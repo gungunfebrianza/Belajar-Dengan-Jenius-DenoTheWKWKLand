@@ -498,6 +498,12 @@
             - Export Visualization
             - Import Module
     - Subchapter 18 - Namespace
+- Chapter 4
+    - Deno Standard Module
+    - Subchapter 1 - Filesystem Programming
+    - Subchapter 2 - Testing
+    - Subchapter 3 - HTTP Server
+    - Subchapter 4 - Web Socket
 - Chapter 5
     - Mastering Node.js
     - Subchapter 1 - Re-Introducing Javascript
@@ -522,13 +528,13 @@
             - Garbage Collector
             - Mark-and-Sweep Algorithm
     - Subchapter 3 - Node.js Application
-        - 4\. Running Javascript File
-        - 5\. Node RPL
-        - 1\. Package Manager
-        - 2\. Node Package Manager
+        - 1\. Running Javascript File
+        - 2\. Node RPL
+        - 3\. Package Manager
+        - 4\. Node Package Manager
             - NPM commands
-        - 3\. Node Package Registry
-        - 4\. Create Node.js Package
+        - 5\. Node Package Registry
+        - 6\. Create Node.js Package
             - package.json
             - Directive
             - Search Package
@@ -537,8 +543,8 @@
             - View Package
             - Publish Package
             - Create Package
-        - 5\. Publish Node.js Package
-        - 10\. Node.js Application
+        - 7\. Publish Node.js Package
+        - 8\. Node.js Application
     - Subchapter 4 - Debugging Node.js
         - 1\. Debug on Visual Studio Code
         - 2\. Built-in Node.js Debugger
