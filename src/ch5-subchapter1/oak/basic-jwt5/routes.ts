@@ -49,5 +49,6 @@ export const guest = (ctx: Context) => {
 };
 
 export const auth = (ctx: Context) => {
+  
   ctx.response.body = "Auth Success";
 };
