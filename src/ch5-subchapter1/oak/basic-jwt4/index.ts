@@ -1,9 +1,14 @@
 import { Application, Router, Context } from "https://deno.land/x/oak/mod.ts";
-import { login, guest, auth } from "./r.ts";
+import { login, guest, auth } from "./routes.ts";
+import { authMD } from "./authMiddleWare.ts";
 
 const router = new Router();
 
-router.post("/login", login).get("/guest", guest).get("/auth", auth);
+router.post("/login", login).get("/guest", guest).get(
+  "/auth",
+  authMD,
+  auth,
+);
 
 const app = new Application();
 
