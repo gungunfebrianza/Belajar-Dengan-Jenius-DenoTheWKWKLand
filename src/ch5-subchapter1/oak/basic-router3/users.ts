@@ -7,13 +7,13 @@ export interface User {
 const users: Array<User> = [
   {
     id: "1",
-    username: "brad",
-    password: "brad",
+    username: "maudy",
+    password: "faza",
   },
   {
     id: "2",
-    username: "max",
-    password: "max",
+    username: "ayunda",
+    password: "faza",
   },
 ];
 
