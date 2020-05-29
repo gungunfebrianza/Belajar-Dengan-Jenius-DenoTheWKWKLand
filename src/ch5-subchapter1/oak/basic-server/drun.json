@@ -1,0 +1,6 @@
+{
+  "entryPoint": "./index.ts",
+  "cwd": "./",
+  "excludes": ["./exclude.ts"],
+  "runtimeOptions": ["--allow-write", "--allow-read"]
+}
