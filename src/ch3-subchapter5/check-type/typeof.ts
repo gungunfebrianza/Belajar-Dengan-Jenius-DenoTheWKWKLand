@@ -10,8 +10,8 @@ console.log(typeof object1);
 console.log(typeof reflect(() => {}));
 
 /* 
-object
-object
-object
-function
-*/
+  object
+  object
+  object
+  function
+  */
