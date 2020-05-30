@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Deno",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}\\ch5-subchapter3\\",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": ["run", "--inspect-brk", "-A", "http-server.ts"],
+      "port": 9229
+    }
+  ]
+}

@@ -1,14 +1,15 @@
-  {
-    "compilerOptions": {
-      "target": "ES2019",
-      "module": "commonjs",
-      "strict": true,
-      "outDir": "dist",
-      "noEmitOnError": true,
-      "noImplicitAny": true,
-      "strictNullChecks": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    }
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true
   }
+}
