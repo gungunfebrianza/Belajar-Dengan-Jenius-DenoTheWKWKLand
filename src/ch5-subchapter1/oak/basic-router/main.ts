@@ -1,12 +1,12 @@
-import { Application, send } from "https://deno.land/x/oak/mod.ts";
+import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+
+const router = new Router();
+router.get("/", (context) => {
+  context.response.body = "Hello world!";
+});
 
 const app = new Application();
-
-app.use(async (context) => {
-  await send(context, context.request.url.pathname, {
-    root: `${Deno.cwd()}/examples/static`,
-    index: "index.html",
-  });
-});
+app.use(router.routes());
+app.use(router.allowedMethods());
 
 await app.listen({ port: 8000 });
