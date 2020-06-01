@@ -1,2 +1,0 @@
-mod.push("cantik")
-mod
