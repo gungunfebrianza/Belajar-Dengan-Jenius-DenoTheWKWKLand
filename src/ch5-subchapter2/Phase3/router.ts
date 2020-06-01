@@ -1,10 +1,11 @@
 import { Router } from "./deps.ts";
 import db from "./db.ts";
+import { errorHandler } from "./util.ts";
 
 const router = new Router();
 
 router
-  .get("/user", async (context) => {
+  .get("/api/v1/account", async (context) => {
     try {
       const result = await db.query({
         text: 'SELECT * FROM "account";',
@@ -15,7 +16,7 @@ router
       context.throw(error);
     }
   })
-  .get("/user/:id", async (context) => {
+  .get("/api/v1/account/:id", async (context) => {
     try {
       if (context.params && context.params.id) {
         const result = await db.query({
@@ -28,10 +29,10 @@ router
       console.log(error);
       context.throw(error);
     }
-  }).post("/user", async (Context) => {
+  }).post("/api/v1/account", async (context) => {
     try {
-      if (Context.request.hasBody) {
-        const body = await Context.request.body({
+      if (context.request.hasBody) {
+        const body = await context.request.body({
           contentTypes: {
             text: ["application/javascript"],
           },
@@ -43,12 +44,13 @@ router
             'INSERT INTO "account" (username, password, email, created_on) VALUES ($1, $2, $3, NOW()) RETURNING *;',
           args: [data.username, data.password, data.email],
         });
-        Context.response.body = result.rowsOfObjects()[0];
+        context.response.body = result.rowsOfObjects()[0];
       }
     } catch (error) {
       console.log(error);
+      errorHandler(error, context);
     }
-  }).put("/user/:id", async (context) => {
+  }).put("/api/v1/account/:id", async (context) => {
     try {
       if (context.params && context.params.id) {
         const id = context.params.id;
@@ -69,7 +71,7 @@ router
       console.log(err);
       context.throw(err);
     }
-  }).delete("/user/:id", async (context) => {
+  }).delete("/api/v1/account/:id", async (context) => {
     if (context.params && context.params.id) {
       const { id } = context.params;
       const result = await db.query({
