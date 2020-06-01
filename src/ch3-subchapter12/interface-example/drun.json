@@ -1,0 +1,5 @@
+{
+  "entryPoint": "./ibook.ts",
+  "cwd": "./",
+  "excludes": ["./exclude.ts"]
+}
