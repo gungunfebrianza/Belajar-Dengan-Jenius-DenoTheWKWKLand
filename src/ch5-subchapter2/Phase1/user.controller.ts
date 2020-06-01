@@ -13,7 +13,6 @@ router
   })
   .get("/user/:id", (context) => {
     if (context.params && context.params.id) {
-    } else {
       const user = {
         id: context.params.id,
         name: "Maudy Ayunda",
