@@ -33,7 +33,7 @@ router
       if (Context.request.hasBody) {
         const body = await Context.request.body({
           contentTypes: {
-            text: ["application/x-www-form-urlencoded"],
+            text: ["application/javascript"],
           },
         });
         console.log(body.value);

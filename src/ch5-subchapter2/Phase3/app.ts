@@ -1,5 +1,4 @@
-import { Application } from "https://deno.land/x/oak/mod.ts";
-import { bgGreen, black } from "./deps.ts";
+import { Application, bgGreen, black } from "./deps.ts";
 import userController from "./user.controller.ts";
 
 const app = new Application();
