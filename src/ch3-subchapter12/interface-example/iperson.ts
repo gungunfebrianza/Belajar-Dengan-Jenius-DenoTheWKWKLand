@@ -8,7 +8,7 @@ class Person implements IPerson {
     this.firstName = inFirstName;
   }
   greet() {
-    alert(`Hello, ${this.firstName}`);
+    console.log(`Hello, ${this.firstName}`);
   }
 }
 const p = new Person("Frank");
