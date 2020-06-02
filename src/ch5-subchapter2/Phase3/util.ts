@@ -1,15 +1,14 @@
-import { isHttpError, Status } from "./deps.ts";
-
 export const errorHandler = (error: any, context: any): void => {
-  if (isHttpError(error)) {
-    switch (error.status) {
-      case Status.InternalServerError:
-        context.response.body = "Internal Server Error! ";
-        break;
-      default:
-        break;
-    }
+  if (error.name === "PostgresError") {
+    console.log('');
+    console.log(`Detail     : ${error.fields.detail}`);
+    console.log(`Table      : ${error.fields.table}`);
+    console.log(`Severity   : ${error.fields.severity}`);
+    console.log(`Message    : ${error.message}`);
+    context.response.body = "Internal Server Error!";
+    context.throw(error);
   } else {
-    throw error;
+    context.response.body = "Internal Server Error!";
+    context.throw(error);
   }
 };

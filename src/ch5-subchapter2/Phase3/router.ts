@@ -4,16 +4,19 @@ import { errorHandler } from "./util.ts";
 
 const router = new Router();
 
+router.get("/", (context) => {
+  context.response.body = "Index";
+});
+
 router
-  .get("/api/v1/account", async (context) => {
+  .get("/api/v1/accounts", async (context) => {
     try {
       const result = await db.query({
         text: 'SELECT * FROM "account";',
       });
       context.response.body = result.rowsOfObjects();
     } catch (error) {
-      console.log(error);
-      context.throw(error);
+      errorHandler(error, context);
     }
   })
   .get("/api/v1/account/:id", async (context) => {
@@ -26,8 +29,7 @@ router
         context.response.body = result.rowsOfObjects()[0];
       }
     } catch (error) {
-      console.log(error);
-      context.throw(error);
+      errorHandler(error, context);
     }
   }).post("/api/v1/account", async (context) => {
     try {
@@ -37,7 +39,6 @@ router
             text: ["application/javascript"],
           },
         });
-        console.log(body.value);
         const data = body.value;
         const result = await db.query({
           text:
@@ -47,7 +48,6 @@ router
         context.response.body = result.rowsOfObjects()[0];
       }
     } catch (error) {
-      console.log(error);
       errorHandler(error, context);
     }
   }).put("/api/v1/account/:id", async (context) => {
@@ -67,20 +67,23 @@ router
         });
         context.response.body = result.rowsOfObjects()[0];
       }
-    } catch (err) {
-      console.log(err);
-      context.throw(err);
+    } catch (error) {
+      errorHandler(error, context);
     }
   }).delete("/api/v1/account/:id", async (context) => {
-    if (context.params && context.params.id) {
-      const { id } = context.params;
-      const result = await db.query({
-        text: 'DELETE FROM "account" WHERE user_id = $1 RETURNING user_id;',
-        args: [id],
-      });
-      if (result.rows.length) {
-        context.response.status = 204;
+    try {
+      if (context.params && context.params.id) {
+        const { id } = context.params;
+        const result = await db.query({
+          text: 'DELETE FROM "account" WHERE user_id = $1 RETURNING user_id;',
+          args: [id],
+        });
+        if (result.rows.length) {
+          context.response.status = 204;
+        }
       }
+    } catch (error) {
+      errorHandler(error, context);
     }
   });
 
