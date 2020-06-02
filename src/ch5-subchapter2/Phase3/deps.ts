@@ -24,3 +24,4 @@ export {
   ClientPostgreSQL,
   nessieConfig,
 } from "https://deno.land/x/nessie/mod.ts";
+export { Schema, dbDialects } from "https://deno.land/x/nessie/qb.ts";
