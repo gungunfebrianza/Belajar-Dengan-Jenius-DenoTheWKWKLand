@@ -71,6 +71,22 @@ class PostClass {
 
       return result.rowsOfObjects()[0] as Omit<IPost, "user">;
     } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
+
+  async delete(id: string): Promise<boolean> {
+    try {
+      await this.pgClient.connect();
+      const text = "delete from posts where posts.id = $1";
+      await this.pgClient.query({
+        text,
+        args: [id],
+      });
+      await this.pgClient.end();
+      return true;
+    } catch (error) {
       throw error;
     }
   }

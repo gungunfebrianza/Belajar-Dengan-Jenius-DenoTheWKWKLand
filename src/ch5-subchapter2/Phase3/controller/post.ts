@@ -30,7 +30,11 @@ export async function getSinglePost(context: RouterContext) {
 
 export async function createPost(context: RouterContext) {
   try {
-    const { request, response } = context;
+    const {
+      request,
+      response,
+      state: { user },
+    } = context;
     const body = await request.body();
     const data: Omit<IPost, "id" | "user"> = body.value;
     const postId = uuid.generate();
@@ -41,6 +45,7 @@ export async function createPost(context: RouterContext) {
       data: post,
     };
   } catch (error) {
+    console.log(error);
     throw error;
   }
 }
@@ -54,7 +59,19 @@ export async function updatePost(context: RouterContext) {
 
 export async function deletePost(context: RouterContext) {
   try {
+    const {
+      params,
+      response,
+      state: { user },
+    } = context;
+    const post = await Post.findOneById(params.id || "");
+    await Post.delete(post.id || "");
+    response.status = 202;
+    response.body = {
+      message: "post deleted",
+    };
   } catch (error) {
+    console.log(error);
     throw error;
   }
 }

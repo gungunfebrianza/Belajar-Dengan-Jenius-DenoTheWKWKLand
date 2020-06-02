@@ -1,7 +1,10 @@
 import { Application, bgGreen, black } from "./deps.ts";
 import mainRouter from "./router.ts";
+import { IUser } from "./types.ts";
 
-const app = new Application();
+const app = new Application<{
+  user: Omit<IUser, "password"> | null;
+}>();
 
 app.use(mainRouter.routes());
 app.use(mainRouter.allowedMethods());

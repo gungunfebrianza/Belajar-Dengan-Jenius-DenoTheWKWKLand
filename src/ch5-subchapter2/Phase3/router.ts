@@ -1,12 +1,5 @@
 import { Router } from "./deps.ts";
-import {
-  signUp,
-  getAll,
-  getByID,
-  updateByID,
-  deleteByID,
-  logIn,
-} from "./controller/user.ts";
+import { signUp, logIn } from "./controller/user.ts";
 import { authMD } from "./util.ts";
 import {
   getAllPost,
@@ -23,18 +16,14 @@ router.get("/", (context) => {
 });
 
 router
-  .get("/api/v1/accounts", getAll)
-  .get("/api/v1/account/:id", getByID)
   .post("/api/v1/signup", signUp)
-  .post("/api/v1/login", logIn)
-  .put("/api/v1/account/:id", updateByID)
-  .delete("/api/v1/account/:id", deleteByID);
+  .post("/api/v1/login", logIn);
 
 router
   .get("/api/v1/posts", getAllPost)
   .get("/api/v1/post/:id", getSinglePost)
-  .post("/api/v1/post-create", createPost)
-  .put("/api/v1/post-update", updatePost)
-  .delete("/api/v1/post-delete", deletePost);
+  .post("/api/v1/post-create", authMD, createPost)
+  .put("/api/v1/post-update",authMD, updatePost)
+  .delete("/api/v1/post-delete/:id", authMD, deletePost);
 
 export default router;
