@@ -12,3 +12,9 @@ export { ConnectionOptions } from "https://deno.land/x/postgres/connection_param
 import * as bcrypt from "https://deno.land/x/bcrypt/mod.ts";
 export { bcrypt };
 export { v4 as uuid } from "https://deno.land/std/uuid/mod.ts";
+export {
+  makeJwt,
+  setExpiration,
+  Jose,
+  Payload,
+} from "https://deno.land/x/djwt/create.ts";

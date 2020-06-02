@@ -81,6 +81,27 @@ class UserClass {
       throw error;
     }
   }
+
+  async comparePassword(
+    email: string,
+    password: string
+  ): Promise<Omit<IUser, "password"> | null> {
+    try {
+      const [user] = await this.get("email", email);
+      if (!user) return null;
+
+      const result = await bcrypt.compare(password, user.password);
+      if (!result) return null;
+
+      return {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+      };
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 export const User = new UserClass(pgClient);
