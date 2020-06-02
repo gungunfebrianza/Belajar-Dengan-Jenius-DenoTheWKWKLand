@@ -2,5 +2,5 @@
   "entryPoint": "./index.ts",
   "cwd": "./",
   "excludes": ["./exclude.ts"],
-  "runtimeOptions": ["--allow-net", "--allow-read", "--allow-env"]
+  "runtimeOptions": ["--unstable", "-A"]
 }

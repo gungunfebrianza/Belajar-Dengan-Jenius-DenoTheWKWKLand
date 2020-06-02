@@ -20,4 +20,8 @@ router
   .put("/api/v1/account/:id", updateByID)
   .delete("/api/v1/account/:id", deleteByID);
 
+router.get("/api/v1/post", (context) => {
+  context.response.body = "Post";
+});
+
 export default router;
