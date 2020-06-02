@@ -66,6 +66,21 @@ class UserClass {
     }
   }
 
+  async findOneById(id: string): Promise<Omit<IUser, "password"> | null> {
+    try {
+      const [result] = await this.get("id", id);
+      if (!result) return null;
+
+      return {
+        id: result.id,
+        email: result.email,
+        name: result.name,
+      };
+    } catch (error) {
+      throw error;
+    }
+  }
+
   async insert2(args: IUser): Promise<void> {
     try {
       await this.pgClient.connect();

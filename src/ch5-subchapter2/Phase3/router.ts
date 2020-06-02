@@ -8,6 +8,13 @@ import {
   logIn,
 } from "./controller/user.ts";
 import { authMD } from "./util.ts";
+import {
+  getAllPost,
+  getSinglePost,
+  createPost,
+  updatePost,
+  deletePost,
+} from "./controller/post.ts";
 
 const router = new Router();
 
@@ -23,8 +30,11 @@ router
   .put("/api/v1/account/:id", updateByID)
   .delete("/api/v1/account/:id", deleteByID);
 
-router.get("/api/v1/post", authMD, (context) => {
-  context.response.body = "Post";
-});
+router
+  .get("/api/v1/posts", getAllPost)
+  .get("/api/v1/post/:id", getSinglePost)
+  .post("/api/v1/post-create", createPost)
+  .put("/api/v1/post-update", updatePost)
+  .delete("/api/v1/post-delete", deletePost);
 
 export default router;
