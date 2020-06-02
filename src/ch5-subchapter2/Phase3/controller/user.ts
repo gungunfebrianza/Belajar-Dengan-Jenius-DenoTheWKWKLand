@@ -1,5 +1,5 @@
 import { RouterContext, uuid } from "../deps.ts";
-import { errorHandler } from "../util.ts";
+import { errorHandler, produceJWT } from "../util.ts";
 import { pgClient } from "../db.ts";
 import { User } from "../model/user.ts";
 import { IUser } from "../types.ts";
@@ -52,7 +52,19 @@ export async function logIn(context: RouterContext) {
       };
       return;
     }
-    
+    const jwt = produceJWT(user.id);
+    if (jwt) {
+      response.status = 200;
+      response.body = {
+        id: user.id,
+        jwt,
+      };
+    } else {
+      response.status = 500;
+      response.body = {
+        message: "Internal server error",
+      };
+    }
   } catch (error) {
     errorHandler(error, context);
   }

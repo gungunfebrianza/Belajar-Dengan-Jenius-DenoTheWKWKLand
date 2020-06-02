@@ -1,5 +1,6 @@
 import "https://deno.land/x/dotenv/load.ts";
 import { PostgresClient, ConnectionOptions, envConfig } from "./deps.ts";
+import { CustomConfig } from "./types.ts";
 
 envConfig();
 
@@ -12,3 +13,6 @@ const dbConfig: ConnectionOptions = {
 };
 
 export const pgClient = new PostgresClient(dbConfig);
+export const objCustomConfig: CustomConfig = {
+  jwtSecret: Deno.env.get("JWT_SECRET")!,
+};
