@@ -5,9 +5,9 @@
       "name": "Deno",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}\\ch5-subchapter2\\Phase2",
+      "cwd": "${workspaceFolder}\\ch5-subchapter2\\Phase3",
       "runtimeExecutable": "deno",
-      "runtimeArgs": ["run", "--inspect-brk", "-A", "app.ts"],
+      "runtimeArgs": ["run", "--inspect-brk", "--unstable", "-A", "index.ts"],
       "port": 9229
     }
   ]

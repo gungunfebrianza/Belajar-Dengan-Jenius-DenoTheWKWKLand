@@ -23,7 +23,7 @@ router
   .get("/api/v1/posts", getAllPost)
   .get("/api/v1/post/:id", getSinglePost)
   .post("/api/v1/post-create", authMD, createPost)
-  .put("/api/v1/post-update",authMD, updatePost)
+  .put("/api/v1/post-update/:id",authMD, updatePost)
   .delete("/api/v1/post-delete/:id", authMD, deletePost);
 
 export default router;

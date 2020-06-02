@@ -19,10 +19,9 @@
     - Kode Sumber?
     - Penggunaan Kode?
     - Terdapat Kesalahan?
-    - https://github.com/gungunfebrianza/Belajar-Dengan-Jenius-DenoTheWKWKLand
     - Pertanyaan, Kritik dan Saran?
 - Chapter 1
-    - Belajar Open Web Platform
+    - **Belajar Open Web Platform**
     - Subchapter 1 - Apa itu Open Web Platform
         - 1\. Technical Specification
         - 2\. HTML 5.2
@@ -119,13 +118,13 @@
             - Data Transmission
             - Base64 Encoding
         - 2\. Cryptography
-            - Cryptoanalys
+            - Cryptoanalysis
             - Information Security
             - Ciphertext
             - Symmetric Cryptography
             - Hash Function
             - Message Authentication Codes (MAC)
-            - Assymetric Cryptography
+            - Asymmetric Cryptography
             - Cryptography Protocol
         - 3\. Man In The Middle (MITM) Attack
             - Eavesdropping
@@ -136,7 +135,7 @@
             - Transport Socket Layer (TLS)
             - SSL Handshake
 - Chapter 2
-    - Setup Learning Environment
+    - **Setup Learning Environment**
     - Subchapter 1 - Visual Studio Code
         - 1\. Install Programming Language Support
         - 2\. Install Keybinding
@@ -170,43 +169,55 @@
             - Execution History
         - 3\. Multiline Code Editor
 - Chapter 3
-    - Mastering Deno
+    - **Mastering Deno**
     - Subchapter 1 - Install Deno
         - 1\. [Installation](#installation)
             - [Deno For Windows](#install-deno-for-windows)
             - [Install Deno For Linux](#install-deno-for-linux)
             - [Install Deno For MacOS](#install-deno-for-macos)
-            - [Check Deno](#3-check-deno)
+            - [Check Deno Version](#3-check-deno)
     - Subchapter 2 - Introduction to Deno
-        - 1\. Deno Runtime
+        - 1\. Why Deno?
+            - Promise Dilemma
+            - Security
+            - The Build System (GYP)
+            - Package.json
+            - Node Modules
+            - Module & Extension
+            - Index.js
+        - 2\. Deno Runtime
             - Typescript
             - Package Manager
             - Browser Object Support
             - Built-in Tooling
             - Sandbox
-        - 2\. Deno Infrastructure
+        - 3\. Deno Infrastructure
             - Deno Front-end
             - Deno Middle-end
             - Deno Back-end
-        - 3\. Deno Program
+        - 4\. Deno Program
             - [REPL Mode Execution](#repl-mode-execution)
             - [Script Execution](#script-execution)
             - [Eval Mode](#eval-mode)
-        - 4\. [Deno Command](#deno-command)
+        - 5\. [Deno Command](#deno-command)
             - [Deno Options](#1-deno-options)
             - [Deno Sub Command](#2-deno-sub-command)
-            - [Deno Command Structure](#3-deno-command-structure)
+            - Deno Help
             - [Run Javascript & Typescript Files](#run-javascript--typescript-files)
             - Deno Permissions
+            - Deno Bundling
+            - Deno Testing
             - Deno Reload Module
+            - Deno Install
+            - Deno Formatting
             - Deno Upgrade Command
-        - 5\. Deno Standard Module
+        - 6\. Deno Standard Module
             - Module fs
             - Module http
             - Module datetime
             - Module node
             - Module ws
-        - 6\. Deno Third-party Modules
+        - 7\. Deno Third-party Modules
     - Subchapter 3 - Introduction to Typescript
         - 1\. Javascript
         - 2\. Node.js
@@ -218,9 +229,13 @@
             - Typescript Compiler Options
             - Typescript Playground
     - Subchapter 4 - Fundamental Deno
-        - 1\. Hello World
-        - 2\. Comment
-        - 3\. Variable Declaration
+        - 1\. Deno Task Runner
+            - Edit Environment Variable
+            - Create Training Directory
+            - Create Index.ts
+        - 2\. Hello World
+        - 3\. Comment
+        - 4\. Variable Declaration
             - Variable
             - Binding
             - Reserver World
@@ -231,7 +246,7 @@
             - Var Keyword
             - Let Keyword
             - Constant Keyword
-        - 4\. Expression & Operator
+        - 5\. Expression & Operator
             - Statement
             - Expression
             - Operator & Operand
@@ -240,10 +255,10 @@
             - Comparison Operator
             - Logical Operator
             - Assignment Operator
-        - 5\. Javascript Strict Mode
+        - 6\. Javascript Strict Mode
             - Legacy Code
-        - 6\. Automatic Add Semicolon
-        - 7\. Clean Code Variable Declaration
+        - 7\. Automatic Add Semicolon
+        - 8\. Clean Code Variable Declaration
             - Avoid Global Variable
             - Declaration on Top
     - Subchapter 5 - Deno Data Types
@@ -268,7 +283,7 @@
             - Escaping
             - String Concatenation
             - String Interpolation
-            - String Obejct
+            - String Object
             - String Property
             - String Methods
         - 4\. Number Data Types
@@ -296,23 +311,25 @@
             - Number to String
             - Decimal Number to String
             - Boolean to String
-            - Check Data Type
-        - 8\. Any Type
+        - 8\. Check Data Type
+            - Primitive Types
+            - Reference Types
+        - 9\. Any Type
             - Parameter Any Type
-            - Option nalmplicitAny
-        - 9\. Type Union
+            - Option nolmplicitAny
+        - 10\. Type Union
             - Parameter Union Type
-        - 10\. Symbol Type
-        - 11\. Type Widening
+        - 11\. Symbol Type
+        - 12\. Type Widening
             - Undefined
             - Null
             - Option strictNullCheck
-        - 12\. BigInt Data Types
+        - 13\. BigInt Data Types
             - Arbitary Precision
             - Arithmetic Operation
             - Comparison
-        - 13\. Custom Type
-        - 14\. Clean Code Data Types
+        - 14\. Custom Type
+        - 15\. Clean Code Data Types
             - Declare Primitive Not Object
     - Subchapter 6 - Control Flow
         - 1\. Block Statements
@@ -385,13 +402,15 @@
         - 1\. Apa itu Fundamental Objects?
         - 2\. Custom Object
             - Object Initializer
-            - Ibject Property
+            - Object Property
             - Object Method
             - Object Constructor
             - Function Constructor
             - Object Prototype
             - Getter & Setter
             - Object Destructure
+            - Typescript Type Template
+            - Complex Object Type
         - 3\. Custom Object Property
             - Add Object Property
             - Access Object Property
@@ -457,16 +476,19 @@
         - Array Properties
             - Multidimensional Array
             - Matrix
+            - Multi-type Array
+            - Array of Interface
         - 3\. Keyed Collections
             - Map
             - Set
-    - Subchapter 14 - Tupless
+    - Subchapter 14 - Tuples
         - Create Tuple
         - Tuple Property & Method
         - Application
     - Subchapter 15 - Enum
         - 1\. Create Enum
         - 2\. Access Enum
+        - 3\. Enum Function Argument
     - Subchapter 16 - Generic
         - 1\. Generic Function
             - Type Union Way
@@ -498,15 +520,116 @@
             - Export Visualization
             - Import Module
     - Subchapter 18 - Namespace
+        - 1\. Create Namespace
+            - Nested Namespace
+            - Namespace Reference
+        - 2\. Application - Stack Data Structure
+            - Stack Data Structure
+            - Create Interface Data Structure
+            - Create Class Stack Data Structure
+            - Create Stack Object
+            - Access Peek Method
+            - Access Push Method
+            - Access Pop Method
+        - 3\. Application - Queue Data Structure
+            - Queue Data Structure
+            - Create Interface Data Structure
+            - Create Class Queue Data Structure
+            - Create Queue Object
+            - Access Peek Method
+            - Access Enqueue Method
+            - Access Dequeue Method
 - Chapter 4
-    - Deno Standard Module
+    - **Deno Standard Module**
     - Subchapter 1 - Filesystem Programming
-    - Subchapter 2 - Testing
-    - Subchapter 3 - HTTP Server
-    - Subchapter 4 - Web Socket
+      - 1\. File & Directory
+        - Create Directory
+        - Check Directory
+        - Delete Directory Content
+        - Move File & Directory
+        - Copy File & Directory
+        - WriteJson
+        - ReadJson
+        - writeFileStr
+        - readFileStr
+        - Walk
+    - Subchapter 2 - HTTP Server
+    - Subchapter 3 - Testing
+      - 1\. Why Software Testing
+      - 2\. Type of Software Testing
+        - Bug
+        - Defect Level
+        - Functional Testing
+        - Unit Testing
+        - Code Refactoring
+        - Code Coverage
+        - Integration Testing
+        - System Testing
+        - User Acceptance Testing
+        - Alpha & Beta Testing
+      - 3\. Deno Testing
+        - Assertion
+        - assert Function
+        - equal Function
+      - 4\. Deno Benchmarking
+        - bench Function
+        - runBenchmarks Function
+    - Subchapter 4 - Debugging
 - Chapter 5
-    - Mastering Node.js
-    - Subchapter 1 - Re-Introducing Javascript
+    - **REST API**
+    - Subchapter 1 - Oak Framework
+        - 1\. Create Basic Server
+            - Class Application
+            - Register Middleware
+            - Start Listening
+        - 2\. Middleware
+            - Control Execution
+            - Context Object
+            - Cookies
+            - Request
+            - Request Properties
+            - Request Headers
+            - Request Methods
+            - Response
+            - Response Properties
+            - Response Methods
+        - 3\. Routing
+            - Class Router
+            - Route Method
+            - Route Path
+            - Route Parameter
+            - Route Handler
+            - Register Route Middleware
+        - 4\. Error Handling
+            - Function isHttpError
+            - Enum Status
+            - Try & Catch
+        - 5\. Static Content
+    - Subchapter 2 - Introduction to Database
+        - 1\. Database Function
+            - Data Management
+            - Scalability
+            - Data Heterogenity
+            - Efficiency
+            - Persistence
+            - Realiability
+            - Consistency
+            - Non-redundancy
+        - 2\. Use Case Database
+        - 3\. Data Analytic
+    - Subchapter 3 - PostgreSQL
+        - 1\. Create Basic Server
+        - 2\. Database Administration
+    - Subchapter 4 - BlogApp
+- Chapter 6
+    - **Mastering Node.js**
+    - Subchapter 1 - Node.js
+        - 1\. Node.js System
+            - Test Node.js Executable
+        - 2\. I/O Scaling Problem
+        - 3\. Process & Thread
+            - Multithread
+        - 4\. Core Modules & libuv
     - Subchapter 2 - V8 Javascript Engine
         - 1\. The Call Stack
             - Synchronous Program
@@ -551,31 +674,21 @@
     - Subchapter 5 - Asynchronous
         - 1\. Callback
         - 2\. Promise
-        - 3\. Async Await
-- Chapter 6
-    - Big Data
-    - Subchapter 1 - Introduction to Database
-        - 1\. Database Function 
-            - Data Management
-            - Scalability
-            - Data Heterogenity
-            - Efficiency
-            - Persistence
-            - Reliabilty
-            - Consistency
-            - Non-redundancy
-        - 2\. Use Case Database
-            - Aplikasi Penjualan (Sales)
-            - Aplikasi Accounting
-            - Aplikasi HR (Human Resource)
-            - Aplikasi Manufaktur
-            - Aplikasi e-Banking
-            - Aplikasi Keuangan
-        - 3\. Data Analytic
+          - Promise Constructor
+          - Resolve
+          - Reject
+          - Example Promise
+        - 3\. Fetch
+          - Fetch Kawal Corona
+          - Promise Chaining
+        - 4\. Fetch Async Await
+          - Async Function
+          - Await
+          - Error Handling
+        - 5\. Top Level Await
 - Daftar Pustaka
 - Tentang Penulis
 
-    
 - [Other Examples](#other-examples-)
 - [Contributor](#contributor)
 
@@ -708,7 +821,6 @@ Jika berhasil maka akan muncul informasi versi deno yang sedang kita gunakan :
 <p align="right">
     <b><a href="#belajar-dengan-jenius-deno">↥ back to top</a></b>
 </p>
-
 ---
 
 ## Deno 101

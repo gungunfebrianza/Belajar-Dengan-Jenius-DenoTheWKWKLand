@@ -1,23 +1,39 @@
-interface User {
-  id: string;
-  name: string;
-  email: string;
-}
+import { denock } from "https://deno.land/x/denock/mod.ts";
 
-//type UserWithoutEmail = Omit<User, "email">;
+denock({
+  method: "POST",
+  protocol: "http",
+  host: "127.0.0.1:8000",
+  headers: [
+    {
+      header: "content-type",
+      value: "application/json",
+    },
+  ],
+  path: "/api/v1/signup",
+  requestBody: {
+    name: "balagendir",
+    email: "asepkumis@gmail.com",
+    password: "tosblong",
+  },
+  replyStatus: 201,
+  responseBody: { example: "My mocked response" },
+});
 
-type UserKeys = keyof User;
-type UserKeysWithoutEmail = Exclude<UserKeys, "email">;
+const urlObject = new URL("http://127.0.0.1:8000/api/v1/signup");
 
-// type UserWithoutEmail = Pick<User, UserKeysWithoutEmail>;
-// let x: UserWithoutEmail = {
-//   name: "asdasd",
-//   id: "asdsd",
-// };
+const response = await fetch(urlObject, {
+  method: "POST",
+  headers: new Headers({
+    "content-type": "application/json",
+  }),
+  body: JSON.stringify({
+    name: "balagendir",
+    email: "asepkumis@gmail.com",
+    password: "tosblong",
+  }),
+});
 
-//type UserWithoutEmail = Pick<User, Exclude<keyof User, "email">>;
-type UserWithoutEmail = Omit<User, "email">;
-let xx: UserWithoutEmail = {
-  name: "asdasd",
-  id: "asdsd",
-};
+const body = await response.json();
+
+console.log(body); // ==> { example: 'My mocked response' } instead of the real response.
