@@ -4,4 +4,8 @@ type User = {
   email: string;
 };
 
-type UserWithoutEmail = Omit<User, "id">;
+type UserWithoutEmail = Omit<User, "email">;
+let xx: UserWithoutEmail = {
+  name: "asdasd",
+  id: "asdsd",
+};
