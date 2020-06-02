@@ -11,8 +11,4 @@ const dbConfig: ConnectionOptions = {
   password: Deno.env.get("DB_PASSWORD"),
 };
 
-const dbclient = new PostgresClient(dbConfig);
-
-//await dbclient.connect();
-
-export default dbclient;
+export const pgClient = new PostgresClient(dbConfig);

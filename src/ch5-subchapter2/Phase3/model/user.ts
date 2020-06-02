@@ -1,8 +1,8 @@
 import { IUser } from "../types.ts";
 import { PostgresClient, bcrypt } from "../deps.ts";
-import pgClient from "../db.ts";
+import { pgClient } from "../db.ts";
 
-class User {
+class UserClass {
   private pgClient: PostgresClient;
   constructor(pgClient: PostgresClient) {
     this.pgClient = pgClient;
@@ -20,4 +20,67 @@ class User {
     };
   }
 
+  private async get(type: string, value: string | number): Promise<IUser[]> {
+    try {
+      await this.pgClient.connect();
+      const text = `select * from users where ${type} = $1`;
+      const result = await this.pgClient.query({
+        text,
+        args: [value],
+      });
+      await this.pgClient.end();
+      return result.rowsOfObjects() as IUser[];
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async findOneByEmail(email: string): Promise<Omit<IUser, "password"> | null> {
+    try {
+      const [result] = await this.get("email", email);
+      if (!result) return null;
+      return {
+        id: result.id,
+        email: result.email,
+        name: result.name,
+      };
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async insert(args: IUser): Promise<{ id: string }> {
+    try {
+      await this.pgClient.connect();
+      const data = await this.beforeInsert(args);
+      const text =
+        "insert into users (id, email, password, name) values ($1, $2, $3, $4) returning id";
+      const result = await this.pgClient.query({
+        text,
+        args: [data.id, data.email, data.password, data.name],
+      });
+      await this.pgClient.end();
+      return { id: result.rows[0][0] };
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async insert2(args: IUser): Promise<void> {
+    try {
+      await this.pgClient.connect();
+      const data = await this.beforeInsert(args);
+      const text =
+        "insert into users (id, email, password, name) values ($1, $2, $3, $4) returning id";
+      const result = await this.pgClient.query({
+        text,
+        args: [data.id, data.email, data.password, data.name],
+      });
+      await this.pgClient.end();
+    } catch (error) {
+      throw error;
+    }
+  }
 }
+
+export const User = new UserClass(pgClient);

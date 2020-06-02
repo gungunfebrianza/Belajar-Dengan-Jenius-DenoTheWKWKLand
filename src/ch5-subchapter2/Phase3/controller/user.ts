@@ -1,6 +1,7 @@
-import { RouterContext } from "../deps.ts";
+import { RouterContext, uuid } from "../deps.ts";
 import { errorHandler } from "../util.ts";
-import pgClient from "../db.ts";
+import { pgClient } from "../db.ts";
+import { User } from "../model/user.ts";
 
 export async function signUp(context: RouterContext) {
   const { request, response } = context;
@@ -11,13 +12,22 @@ export async function signUp(context: RouterContext) {
           text: ["application/javascript"],
         },
       });
+      const userId = uuid.generate();
       const data = body.value;
-      const result = await pgClient.query({
-        text:
-          'INSERT INTO "account" (username, password, email, created_on) VALUES ($1, $2, $3, NOW()) RETURNING *;',
-        args: [data.username, data.password, data.email],
-      });
-      response.body = result.rowsOfObjects()[0];
+      const user = await User.findOneByEmail(data.email);
+      if (user) {
+        response.status = 400;
+        response.body = {
+          message: `User with email : ${data.email} already exist`,
+        };
+        return;
+      }
+      await User.insert2({ ...data, id: userId });
+      response.status = 200;
+      response.body = {
+        email: data.email,
+        success: 1,
+      };
     }
   } catch (error) {
     errorHandler(error, context);

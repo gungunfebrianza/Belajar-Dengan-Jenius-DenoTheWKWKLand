@@ -11,3 +11,4 @@ export { Client as PostgresClient } from "https://deno.land/x/postgres/mod.ts";
 export { ConnectionOptions } from "https://deno.land/x/postgres/connection_params.ts";
 import * as bcrypt from "https://deno.land/x/bcrypt/mod.ts";
 export { bcrypt };
+export { v4 as uuid } from "https://deno.land/std/uuid/mod.ts";
