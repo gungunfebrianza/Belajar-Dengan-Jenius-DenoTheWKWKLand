@@ -13,6 +13,8 @@ const dbConfig: ConnectionOptions = {
 };
 
 export const pgClient = new PostgresClient(dbConfig);
+
 export const objCustomConfig: CustomConfig = {
+  DBPGConfig: dbConfig,
   jwtSecret: Deno.env.get("JWT_SECRET")!,
 };

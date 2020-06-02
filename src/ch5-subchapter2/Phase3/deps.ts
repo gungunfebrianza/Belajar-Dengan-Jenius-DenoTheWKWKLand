@@ -4,6 +4,7 @@ export {
   Status,
   Router,
   RouterContext,
+  Context,
 } from "https://deno.land/x/oak/mod.ts";
 export { bgGreen, black } from "https://deno.land/std/fmt/colors.ts";
 export { config as envConfig } from "https://deno.land/x/dotenv/mod.ts";
@@ -18,3 +19,8 @@ export {
   Jose,
   Payload,
 } from "https://deno.land/x/djwt/create.ts";
+export { validateJwt } from "https://deno.land/x/djwt/validate.ts";
+export {
+  ClientPostgreSQL,
+  nessieConfig,
+} from "https://deno.land/x/nessie/mod.ts";

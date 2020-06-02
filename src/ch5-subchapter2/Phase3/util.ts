@@ -1,5 +1,31 @@
-import { makeJwt, Jose, Payload, setExpiration } from "./deps.ts";
+import {
+  makeJwt,
+  Jose,
+  Payload,
+  setExpiration,
+  validateJwt,
+  Context,
+} from "./deps.ts";
 import { objCustomConfig } from "./db.ts";
+
+export const authMD = async (context: Context, next: any) => {
+  const { request, response } = context;
+  const headers: Headers = request.headers;
+  const authorization = headers.get("Authorization");
+  if (!authorization) {
+    response.status = 401;
+    response.body = { message: "Authorization Header Required! " };
+    return;
+  }
+  const jwt = authorization.split(" ")[1];
+  let key: string = objCustomConfig.jwtSecret;
+  if (await validateJwt(jwt, key, { isThrowing: false })) {
+    await next();
+    return;
+  }
+  response.status = 401;
+  response.body = { message: "Invalid JWT Token" };
+};
 
 export function produceJWT(id: string) {
   const header: Jose = {

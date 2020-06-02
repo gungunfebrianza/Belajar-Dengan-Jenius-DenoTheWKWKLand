@@ -1,6 +1,7 @@
 import { ConnectionOptions } from "./deps.ts";
 
 export interface CustomConfig {
+  DBPGConfig: ConnectionOptions;
   jwtSecret: string;
 }
 
