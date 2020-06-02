@@ -31,10 +31,12 @@ router
     } catch (error) {
       errorHandler(error, context);
     }
-  }).post("/api/v1/account", async (context) => {
+  })
+  .post("/api/v1/account", async (context) => {
+    const { request, response } = context;
     try {
       if (context.request.hasBody) {
-        const body = await context.request.body({
+        const body = await request.body({
           contentTypes: {
             text: ["application/javascript"],
           },
@@ -45,12 +47,13 @@ router
             'INSERT INTO "account" (username, password, email, created_on) VALUES ($1, $2, $3, NOW()) RETURNING *;',
           args: [data.username, data.password, data.email],
         });
-        context.response.body = result.rowsOfObjects()[0];
+        response.body = result.rowsOfObjects()[0];
       }
     } catch (error) {
       errorHandler(error, context);
     }
-  }).put("/api/v1/account/:id", async (context) => {
+  })
+  .put("/api/v1/account/:id", async (context) => {
     try {
       if (context.params && context.params.id) {
         const id = context.params.id;
@@ -70,7 +73,8 @@ router
     } catch (error) {
       errorHandler(error, context);
     }
-  }).delete("/api/v1/account/:id", async (context) => {
+  })
+  .delete("/api/v1/account/:id", async (context) => {
     try {
       if (context.params && context.params.id) {
         const { id } = context.params;
